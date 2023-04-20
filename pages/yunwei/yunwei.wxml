@@ -1,0 +1,16 @@
+<image class="widget__arrow" mode="widthFix" src="/icon/yw.jpg" mode="aspectFill">
+</image>
+
+<view  class="title"><text>运维中心</text></view>
+<view>
+  <text class="title2">中心定位</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为踹网技术部门之一，运维可以结识其他有趣的灵魂，共同成长。技术培训到位，欢乐的团建也齐头并进。学校还有许多的线上系统需求，是需要到运维中心的，比如，运维将协助运营团中央的“到梦空间”第二课堂系统。
+
+
+</text>
+<text class="title2">工作制度</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;负责FTP、网页、微信小程序的开发与维护开发网页前端。来运维学习IT技术，制作一个属于你的前端网页。
+</text>
+</view>

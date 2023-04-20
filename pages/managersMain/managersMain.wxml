@@ -1,0 +1,80 @@
+
+<view wx:if="{{managerLogin}}">
+  <image src="../../icon/flower.png" class="flower"></image>
+  
+  <view class="buttonLogin"> <button bindtap="getUserProfile" wx:if="{{managerLogin}}">登陆</button></view>
+  
+</view>
+
+<view wx:elif="{{ifManager}}"> 
+  <view class="managerNum">{{managerNum}}</view>
+  <view class="manager"><image class="managerDor" src="{{userInfo.avatarUrl}}"></image>
+  <text class="nameDor" wx:for="{{managerInfor}}" wx:key="item" wx:for-index="index">管理人:{{item.name}}</text>
+  <view class="Num">修机数：{{managerNum}}</view>
+  </view>
+
+
+  <view class="blockButton">
+    <view class="blockButton2" wx:if="{{ifDirector}}">
+      <view bindtap="openS" class="button1">
+      <image src="../../icon/repire.png" class="openDor"></image>
+      <text>开启业务</text></view>
+      <view bindtap="stopS" class="button2">
+      <image src="../../icon/close.png" class="closeDor"></image>
+      <text>关闭业务</text></view>
+    </view>
+
+    <view class="blockButton2">
+      <view bindtap="showData" class="button3"><image src="../../icon/order.png" class="orderDor"></image><text>获取申请单</text></view>
+
+      <view class="back" bindtap="backPage"><image src="../../icon/mainPage.png" class="backDor"></image><text>其他</text></view>
+  </view>
+  <view class="blockButton2">
+    <view class="exit" bindtap="exit">退出登陆</view>
+  </view>
+
+</view>
+
+</view>
+
+<view wx:elif="{{managerLogin==false}}">
+  <view class="user">
+    <view class="textName"> {{userInfo.nickName}}</view>
+    <view class="textIntro">Trysky</view>
+    <image class="head" src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view class="userBox">
+    <view class="userGet" bindtap="getSubmit">我的申请
+      <image src="../../icon/order.png"></image>
+    </view>
+    <view class="userActivities" bindtap="activities">我的活动
+      <image src="../../icon/activities.png"></image>
+    </view>
+    <view class="userExit" bindtap="exit">退出登陆
+      <image src="../../icon/close.png"></image>
+    </view>
+  </view>
+  
+  <view class="box">
+    <view wx:for="{{userSum}}" wx:key="item" wx:for-index="index" class="usergetInfor" >
+        <view class="user-decor">=|</view>
+        <view class="user-num">{{item.num}}</view>
+        <view class="user-type">{{item.type}}</view>
+
+        <view wx:if="{{item.ifAccept}}">
+          <view class="user-repire">处理人：{{item.repireman}}</view>
+          <view class="Accept">
+            <image src="../../icon/hadDisposed.png"></image>
+          </view>
+        </view>
+        <view wx:else>
+          <view class="user-repire">待处理</view>
+        </view>
+        <view class="user-time">{{item.time}}</view>
+    </view>
+  </view>
+</view>
+
+<view wx:else class="waitBox">
+请等待
+</view>

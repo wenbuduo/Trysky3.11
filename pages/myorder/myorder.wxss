@@ -1,0 +1,139 @@
+page{
+  padding: 0px;
+  margin: 0px;
+  background-attachment:fixed;
+  background-image:linear-gradient(180deg,#CCFFFF,#FFFFCC);
+}
+
+.title{
+  position: fixed;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 15px;
+  color: darkgreen;
+  background-color: rgba(255, 255, 255, 0.103);
+  border-top: rgba(255, 255, 255, 0.651) 1px solid;
+  border-left: rgba(255, 255, 255, 0.637) 1px solid;
+  z-index: 10;
+  top:5px;
+  left: 5px;
+}
+
+.showBox{
+  margin: 15px;
+  margin-bottom:25px; 
+  padding: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.308);
+  border-top: rgba(255, 255, 255, 0.5) 1px solid;
+  border-left: rgba(255, 255, 255, 0.5) 1px solid;
+  backdrop-filter: blur(5px);
+}
+
+.timeDecoration{
+  position: absolute;
+  font-size: 8px;
+  right: 35px;
+  color: rgba(8, 13, 83, 0.788);
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.box1{
+  height:auto;
+  min-width: 95px;
+  padding: 3px;
+  margin: 5px;
+  border-right:rgba(0, 0, 255, 0.185) 1px solid;  
+  position: relative;
+}
+.box2{
+  min-width: 100px;
+}
+
+.showImage{
+  height: 50px;
+  width: 50px;
+}
+.nameDecoration{
+  color: rgba(0, 140, 255, 0.418);
+  font-weight: 800;
+  font-size: 18px;
+  padding: 2px;
+  
+}
+.genderDecoration{
+  position: absolute;
+  font-size: 10px;
+  top:40px;
+  right: 30px;
+  color: rgb(13, 7, 87);
+}
+.majorDecoration{
+  font-size: 10px;
+  padding: 1px;
+  color: salmon;
+}
+.dorDecoration{
+  font-size: 15px;
+  color: rgba(85, 134, 10, 0.452);
+}
+.phoneDecoration{
+  margin: 5px;
+  border-bottom: rgba(0, 140, 255, 0.418) 1px dashed;
+  color: rgba(0, 140, 255, 0.418);
+  font-size: 15px;
+}
+.wxDecoration{
+  margin: 5px;
+  color: salmon;
+  border-bottom: salmon 1px dashed;
+  font-size: 15px;
+}
+.detailsDecoration{
+  margin: 5px;
+  font-size: 12px;
+  padding: 5px;
+  background: rgba(46, 139, 86, 0.288);
+  border-radius: 5px;
+}
+
+
+
+.typeDecoration{
+  color: rgba(19, 32, 216, 0.356);
+  font-style:italic;
+  position: absolute;
+  right: 25px;
+}
+
+.decor1{
+  color: transparent;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+  filter: blur(1px);
+  right: -40px;
+  top: 150px;
+  z-index: -10;
+}
+
+.decor2{
+  color: transparent;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  filter: blur(1px);
+  left: -40px;
+  top: 350px;
+  z-index: -10;
+}

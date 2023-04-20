@@ -1,0 +1,81 @@
+
+<image class="photoDecoration1" src="../../icon/starfish1.png"></image>
+<image class="photoDecoration2" src="../../icon/starfish1.png"></image>
+
+<view bindtap="myorder">
+  <text class="myorder">我的修理</text>
+</view>
+
+<block wx:for="{{testInf}}" wx:key="item" wx:for-index="index">
+  <block>
+    
+    <view wx:if="{{item.ifAccept}}">
+      <view class="disDecor">处理人:{{item.repireman}}</view>
+    </view>
+    <view class="wait" bindtap="waitDispose" wx:else data-userId="{{item._id}}" data-repire="{{index}}">
+      <image src="../../icon/waitDispose.png"></image></view>
+
+      
+      <view class="showBox">
+        <view class="typeDecoration">{{item.type}}</view>
+        <view class="numDecoration">{{item.num+1}}</view>
+      <view class="main">
+         <view class="box1">
+            <block wx:if="{{item.gender=='男'}}">
+              <image src="../../icon/male.png" class="showImage"></image>
+            </block>
+            <block wx:elif="{{item.gender=='女'}}">
+              <image src="../../icon/female.png" class="showImage"></image>
+            </block>
+            
+            <view class="nameDecoration" user-select='true'>{{item.name}}</view>
+            <view class="genderDecoration">{{item.gender}}</view>
+            <view class="majorDecoration" user-select='true'>{{item.gradeMajor}}</view>
+            <view class="dorDecoration" user-select='true'>{{item.dor}}</view>
+          </view>
+          
+          
+          <view class="box2">
+            <view class="phoneDecoration">电话:<text user-select='true'>{{item.phonenum}}</text></view>
+            <view  class="wxDecoration" >wx:<text user-select='true'>{{item.wxnum}}</text></view>
+            <view class="detailsDecoration">{{item.details}} </view>
+          </view>
+          
+          
+      </view>
+        
+      
+      <view class="timeDecoration">{{item.time}}</view>
+      
+    </view>
+
+
+    <!-- <view class="showBox">
+      <view class="typeDecoration">{{item.type}}</view>
+      <view class="numDecoration">{{item.num+1}}</view>
+
+      <view class="box1">
+        <text class="nameDecoration" user-select='true'>{{item.name}}</text>
+        <text class="genderDecoration">{{item.gender}}</text>
+        <text class="majorDecoration" user-select='true'>{{item.gradeMajor}}</text>
+      </view>
+      
+      
+      <view class="box2">
+        <text class="dorDecoration" user-select='true'>{{item.dor}}</text>
+        <text class="phoneDecoration" user-select='true'>电话:{{item.phonenum}}</text>
+      </view>
+
+      <view  class="wxDecoration" >wx:<text user-select='true'>{{item.wxnum}}</text></view>
+      <view class="detailsDecoration">{{item.details}}</view>
+       <view class="timeDecoration">{{item.time}}</view>
+    </view> -->
+  
+  </block>
+
+</block>
+
+
+
+
+

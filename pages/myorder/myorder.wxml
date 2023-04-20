@@ -1,0 +1,43 @@
+<view>
+  <text class="title" bindtap="back">返回</text>
+  <view class="decor1">1</view>
+  <view class="decor2">1</view>
+</view>
+
+<view>
+  <block wx:for="{{orderInfor}}" wx:key="item" wx:for-index="index">
+  
+    <view class="showBox">
+      <view class="typeDecoration">{{item.type}}</view>
+      <view class="main">
+         <view class="box1">
+            <block wx:if="{{item.gender=='男'}}">
+              <image src="../../icon/male.png" class="showImage"></image>
+            </block>
+            <block wx:elif="{{item.gender=='女'}}">
+              <image src="../../icon/female.png" class="showImage"></image>
+            </block>
+            
+            <view class="nameDecoration" user-select='true'>{{item.name}}</view>
+            <view class="genderDecoration">{{item.gender}}</view>
+            <view class="majorDecoration" user-select='true'>{{item.gradeMajor}}</view>
+            <view class="dorDecoration" user-select='true'>{{item.dor}}</view>
+          </view>
+          
+          
+          <view class="box2">
+            <view class="phoneDecoration">电话:<text user-select='true'>{{item.phonenum}}</text></view>
+            <view  class="wxDecoration" >wx:<text user-select='true'>{{item.wxnum}}</text></view>
+            <view class="detailsDecoration">{{item.details}} </view>
+          </view>
+          
+          
+      </view>
+        
+      
+      <view class="timeDecoration">{{item.time}}</view>
+      
+    </view>
+  
+  </block>
+</view>

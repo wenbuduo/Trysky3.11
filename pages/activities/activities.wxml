@@ -1,0 +1,18 @@
+<view class="box1" align="center"><text>踹网传统活动</text></view>
+<view class="box2">
+  <navigator url="../../pages/activities/dust elimination/dust elimination" hover-class="buling">
+    <view>大功告尘</view>
+    </navigator>
+</view>
+<view>
+  <image></image>
+</view>
+
+<view class="box3">
+  <navigator url="../../pages/activities/E-sports/E-sports" hover-class="buling">
+    <view>永无止竞</view>
+  </navigator>
+</view>
+<view>
+  <image></image>
+</view>

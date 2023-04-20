@@ -1,0 +1,223 @@
+page{
+  background: linear-gradient(180deg,#CCFFFF,#6699CC);
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
+
+.body1{
+  margin: 0px;
+  padding: 0px;
+}
+.tslogo{
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'NSimSun';
+  font-size: 28px;
+  color: rgba(39, 1, 255, 0.15)
+}
+.tw{
+  margin-left: -11%;
+  margin-right: -11%;
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+  
+}
+.tw view{
+  
+  font-family: 'NSimSun';
+  font-size: 75px;
+  font-weight: 800;
+  color:#FFF0F5;
+  margin-top: 80%;
+}
+
+.list1{
+  position: relative;
+  display: flex;
+justify-content:space-between;
+  flex-direction: row;
+}
+
+.list1 view navigator{
+  position: relative;
+  margin-top: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+
+  padding: 10px;
+  border-radius: 5px;
+
+
+  border: 1px solid rgba(255, 255, 255,0.4);
+  border-right: 1px solid rgba(255, 255, 255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+  transition: 0.9s;
+  overflow: hidden;
+}
+
+.test1{
+  color: white;
+  font-weight: 100;
+  font-size: 10px;
+  font-family: 'KaiTi';
+  text-align: center;
+}
+
+.icon{
+  height: 30px;
+  width: 30px;
+}
+
+.buling{
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+.list1 view navigator::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg)translateX(85px);
+  transition: 0.9s;
+}
+
+.list1 view navigator:hover::before{
+  transform: skewX(45deg) translateX(-60px);
+}
+
+.Photobox{
+  position: absolute;
+  color:rgba(255, 255, 255, 0.5);
+  font-weight: 800;
+  width: 100%;
+}
+.photo1{
+  position: absolute;
+  right: 0px;
+  border-radius: 5px;
+  background-color: rgba(255,0,0,0.1);
+  border: 1px solid rgba(255, 255, 255,0.4);
+  border-right: 1px solid rgba(255, 255, 255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  margin-right: 10px;
+  margin-top: 20px; 
+  z-index: 3;
+}
+
+.photo11{
+  width: 280px;
+  height: 173px;
+  padding: 5px;
+  backdrop-filter: blur(2px);
+}
+
+.photo12{
+  width: 280px;
+  height: 173px;
+  padding: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  animation: move1 0.8s;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes move1{
+  100%{
+    transform: translateX(-10%)translateY(25px);
+  }
+}
+
+
+.photo2{
+  position: absolute;
+  left: 0px;
+  border-radius: 3px;
+  background-color: rgba(9, 255, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255,0.4);
+  border-right: 1px solid rgba(255, 255, 255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  margin-left: 5px;
+  margin-top: 150px; 
+  z-index: 2;
+}
+
+.photo21{
+  width: 180px;
+  height: 111px;
+  padding: 3px;
+  backdrop-filter: blur(2px);
+}
+
+.photo22{
+  width: 180px;
+  height: 111px;
+  padding: 3px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  animation: move2 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move2{
+  100%{
+    transform: translateX(50%)translateY(60px);
+  }
+}
+
+.photo3{
+  position: absolute;
+  left: 220px;
+  border-radius: 3px;
+  background-color: rgba(255, 238, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255,0.4);
+  border-right: 1px solid rgba(255, 255, 255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  margin-left: 5px;
+  margin-top: 265px; 
+  z-index: 1;
+}
+
+.photo31{
+  width: 100px;
+  height: 61.8px;
+  padding: 2px;
+  backdrop-filter: blur(2px);
+}
+
+.photo32{
+  width: 100px;
+  height: 61.8px;
+  padding: 2px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  animation: move3 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move3{
+  100%{
+    transform: translateX(-30%)translateY(30px);
+  }
+}
+
+.bottom{
+  font-size: 10px;
+  margin: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.603);
+}

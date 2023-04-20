@@ -1,0 +1,201 @@
+page{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  background-repeat:repeat;
+  background-image: linear-gradient(180deg, #CCFFFF 0%, rgba(255, 230, 250, 0.514) 75%,#CCFFFF 100%);
+ 
+}
+
+
+.disDecor{
+  position: absolute;
+  right:60px;
+  padding: 0px;
+  color: salmon;
+  font-size: 12px;
+}
+.wait{
+  position: relative;
+}
+
+.wait image{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  opacity:0.5;
+  transform: rotate(-30deg);
+  right: 0px;
+  top: -20px;
+  z-index: 10;
+}
+
+.showIn{
+  margin: 50rpx;
+  border: 5px outset #5a8ff3;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 25rpx;
+  background-color: gray;
+  color: white;
+}
+.INPUT1{
+  margin-top:45%;
+  text-align:center;
+  background-color:#CCFFFF; 
+}
+.Check{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  margin: 5px;
+}
+.Check2{
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.t1{
+  padding: 2px;
+  font-size: 15px;
+  font-style: oblique;
+}
+
+.numDecoration{
+  position: absolute;
+  right: 22px;
+  font-size: 20px;
+  font-weight: lighter;
+  font-style:oblique;
+  color: 	rgba(11, 22, 175, 0.301);
+  top: 23px;
+}
+
+
+.showBox{
+  margin: 15px;
+  margin-bottom:25px; 
+  padding: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.308);
+  border-top: rgba(255, 255, 255, 0.5) 1px solid;
+  border-left: rgba(255, 255, 255, 0.5) 1px solid;
+  position: relative;
+}
+
+.timeDecoration{
+  position: absolute;
+  font-size: 8px;
+  right: 35px;
+  color: rgba(8, 13, 83, 0.788);
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.box1{
+  height:auto;
+  min-width: 95px;
+  padding: 3px;
+  margin: 5px;
+  border-right:rgba(0, 0, 255, 0.185) 1px solid;  
+  position: relative;
+}
+.box2{
+  min-width: 100px;
+}
+
+.showImage{
+  height: 50px;
+  width: 50px;
+}
+.nameDecoration{
+  color: rgba(0, 140, 255, 0.418);
+  font-weight: 800;
+  font-size: 18px;
+  padding: 2px;
+  
+}
+.genderDecoration{
+  position: absolute;
+  font-size: 10px;
+  top:40px;
+  right: 30px;
+  color: rgb(13, 7, 87);
+}
+.majorDecoration{
+  font-size: 10px;
+  padding: 1px;
+  color: salmon;
+}
+.dorDecoration{
+  font-size: 15px;
+  color: rgba(85, 134, 10, 0.452);
+}
+.phoneDecoration{
+  margin: 5px;
+  border-bottom: rgba(0, 140, 255, 0.418) 1px dashed;
+  color: rgba(0, 140, 255, 0.418);
+  font-size: 15px;
+}
+.wxDecoration{
+  margin: 5px;
+  color: salmon;
+  border-bottom: salmon 1px dashed;
+  font-size: 15px;
+}
+.detailsDecoration{
+  margin: 5px;
+  font-size: 12px;
+  padding: 5px;
+  background: rgba(46, 139, 86, 0.288);
+  border-radius: 5px;
+}
+
+.typeDecoration{
+  color: rgba(19, 32, 216, 0.356);
+  font-style:italic;
+  position: absolute;
+  right: 12px;
+  font-size: 13px;
+}
+
+.photoDecoration1{
+  position: fixed;
+  left: 20px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+}
+.photoDecoration2{
+  position: fixed;
+  right: 5px;
+  bottom: 15px;
+  width: 30px;
+  height: 30px;
+  transform: rotate(200deg);
+}
+.myorder{
+  position: fixed;
+  top:30px;
+  left: 5px;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255,0.4);
+  border-right: 1px solid rgba(255, 255, 255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  color: seagreen;
+}
+

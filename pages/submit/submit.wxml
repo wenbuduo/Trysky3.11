@@ -1,0 +1,90 @@
+
+<view class="body1" wx:if="{{ifOpen}}">
+<!-- <view class="body1" wx:if="{{false}}"> -->
+  <view class="outline">
+    
+      <text  space="nbsp" class="outlineText">Repire   </text>
+    
+    <form>
+      <view class="sbox2">
+        <input type="text"  maxlength="10" bindinput="addName" class="input1"></input>
+        <label>姓名</label>
+      </view>
+      <view class="sbox2">
+        <input type="text" bindinput="addWechat"></input>
+        <label>Vx号</label>
+      </view>
+      <view class="sbox2">
+        <input type="number" 
+  maxlength="15" bindinput="addPhone"></input>
+        <label>电话号码</label>
+      </view>
+      <view class="sbox2">
+        <input type="text" bindinput="addGM"></input>
+        <label>年级专业</label>  
+      </view>
+      <view class="sbox2">
+        <input type="text" bindinput="addDor"></input>
+        <label>宿舍</label>
+      </view>
+
+      <view class="sbox3">
+        <radio-group bindchange="addGender">
+          <radio value="男">男</radio>
+          <radio value="女">女</radio>
+        </radio-group>
+
+        <radio-group bindchange="addType">
+          <radio value="电脑报修">电脑报修</radio>
+          <radio value="手机报修">手机报修</radio>
+        </radio-group>
+      </view>
+
+      <textarea placeholder="详细信息，包括但不限于电脑型号、电脑问题、" class="maxmax" bindinput="addDa"></textarea>
+      <view class="agreement">
+        <image src="{{agImage}}" bindtap="agreementCheck"></image>
+        <navigator url="../../pages/agreement/agreement" ><text>(点亮图标)同意《电脑义修服务协议书》</text></navigator>
+      </view>
+
+      <view class="occupy">1</view>
+      <view class="occupy">1</view>
+
+    </form>
+
+  </view>
+
+      <view class="submit" bindtap="addData">
+        <image src="../../icon/submit.png"></image>
+        <label>提交</label>
+      </view>
+
+  <view class="decorate">
+    <image src="../../icon/starfish.png" class="photo1"></image>
+    <image src="../../icon/shell.png" class="photo2" bindtap="renew"></image>
+  </view>
+
+</view>
+
+
+<view class="body2" wx:else bindtap="renew">
+  <view class="text2">
+  {{msg}}
+  <view class="ban1">
+    <view>1</view>
+    <view>2</view>
+    <view>3</view>
+    <view>4</view>
+    <view>5</view>
+  </view>
+  <view class="ban2">
+    <view>1</view>
+    <view>2</view>
+    <view>3</view>
+    <view>4</view>
+    <view>5</view>
+  </view>
+
+  </view>
+  <image src="../../icon/ban.png"></image>
+</view>
+

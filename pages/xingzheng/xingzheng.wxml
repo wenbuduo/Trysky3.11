@@ -1,0 +1,16 @@
+<image class="widget__arrow" mode="widthFix" src="/icon/xz.jpg" mode="aspectFill">
+</image>
+
+<view  class="title"><text>行政中心</text></view>
+<view>
+  <text class="title2">中心定位</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是踹网的大脑，为其他五大中心联系的重要纽带，负责活动策划和组织管理、规章制度和绩效考核、实地考察与申报。在这里会有系统的策划书培训和大量活动策划的实践机会。
+
+
+</text>
+<text class="title2">工作制度</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;负行政中心的每一位干事都有外派到其他中心的机会——干事轮值外派，利于全方位学习
+</text>
+</view>

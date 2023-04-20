@@ -1,0 +1,55 @@
+<view class="body1">
+
+<view class="list1">
+  <view><navigator url="../../pages/xingzheng/xingzheng" hover-class="buling">
+  
+  <image src="../../icon/xingzheng.png" class="icon" ></image>
+  <view class="test1">行政中心</view>
+  </navigator></view>
+
+  <view><navigator url="../../pages/shangwu/shangwu" hover-class="buling">
+  
+  <image src="../../icon/shangwu.png" class="icon" ></image>
+  <view class="test1">商务中心</view>
+  </navigator></view>
+  
+
+  <view class="list2">
+  <view><navigator url="../../pages/jishu/jishu" hover-class="buling">
+  
+  <image src="../../icon/jishu.png" class="icon" ></image>
+  <view class="test1">技术中心</view>
+  </navigator></view>
+
+
+
+  <view><navigator url="../../pages/yunwei/yunwei" hover-class="buling">
+  
+  <image src="../../icon/yunwei.png" class="icon" ></image>
+  <view class="test1">运维中心</view>
+  </navigator></view>
+
+  
+
+  <view><navigator url="../../pages/zixun/zixun" hover-class="buling">
+  
+  <image src="../../icon/zixun.png" class="icon" ></image>
+  <view class="test1">资讯中心</view>
+  </navigator></view>
+
+</view>
+
+
+  <view><navigator url="../../pages/chuanmei/chuanmei" hover-class="buling">
+  
+  <image src="../../icon/chuanmei.png" class="icon" ></image>
+  <view class="test1">传媒中心</view>
+  </navigator></view>
+</view>
+
+</view>
+
+
+
+
+

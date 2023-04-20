@@ -1,0 +1,408 @@
+page {
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(180deg, #CCFFFF 0%, rgba(234, 204, 248, 0.493) 65%, rgba(40, 238, 33, 0.151) 100%);
+  background-attachment:fixed;
+}
+
+.managerNum{
+  position: absolute;
+  margin-top:80px;
+  left: 60%;
+  font-size: 100px;
+  font-style: oblique;
+  font-weight: 100;
+  filter: blur(5px);
+  color: slateblue;
+}
+
+.manager{
+  display: flex;
+  justify-content: center; 
+}
+.managerDor{
+  width: 80px;
+  height: 80px;
+  padding-top: 5px;
+  border: 1px solid #142078;
+  border-radius:50%; 
+  margin-top: 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  animation-name: manager;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.nameDor{
+  position: absolute;
+  margin-top:65px;
+  color:   slateblue;
+  font-weight: 800;
+  font-size: 10px;
+}
+.Num{
+  position: absolute;
+  margin-top:80px;
+  color:   slateblue;
+  font-weight: 800;
+  font-size: 10px;
+}
+@keyframes manager{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+
+.blockButton{
+  display: flex;
+  align-items : center;  
+  flex-direction:column;
+  margin-top:25px;
+}
+.blockButton2{
+  display: flex;
+
+}
+
+.button1{
+  margin: 10px;
+  display: flex;
+  align-items:center; 
+  padding: 5px;
+  
+  border: 1px solid rgba(255, 255, 255,0.4);
+  border-right: 1px solid rgba(255, 255, 255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+}
+.button1:active{
+  transition-duration: 0.1s;
+  padding: 2px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+.button1 text{
+  font-weight: 800;
+  color: #1C94AE;
+  margin: 3px;
+}
+.openDor{
+  width: 40px;
+  height: 40px;
+}
+
+.button2{
+  margin: 10px;
+  display: flex;
+  align-items:center; 
+  padding: 5px;
+
+  border: 1px solid rgba(255, 255, 255,0.4);
+  border-right: 1px solid rgba(255, 255, 255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+
+}
+.button2:active{
+  transition-duration: 0.1s;
+  padding: 2px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+.button2 text{
+  font-weight: 800;
+  color: #DE3F36;
+}
+.closeDor{
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+}
+
+.button3{
+  margin: 10px;
+  display: flex;
+  align-items:center; 
+  padding: 5px;
+
+  border: 1px solid rgba(255, 255, 255,0.4);
+  border-right: 1px solid rgba(255, 255, 255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.button3:active{
+  transition-duration: 0.1s;
+  padding: 2px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+.button3 text{
+  font-weight: 800;
+  color: #1C94AE;
+  margin: 3px;
+}
+.orderDor{
+  height: 35px;
+  width: 40px;
+}
+
+.back{
+  display: flex;
+  align-items:center; 
+  margin: 10px;
+  padding-left:15px;
+  padding-right:15px;  
+  border: 1px solid rgba(255, 255, 255,0.4);
+  border-right: 1px solid rgba(255, 255, 255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.back:active{
+  transition-duration: 0.1s;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+.backDor{
+  width: 40px;
+  height: 40px;
+}
+.back text{
+  font-weight: 800;
+  color: #DFBA47;
+}
+.exit{
+  margin: 15px;
+  background: linear-gradient(90deg,transparent,rgba(54, 121, 222, 0.514),transparent);
+  width: 150px;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 5px;
+}
+
+
+
+
+
+.checkInput{
+  margin-top:50%; 
+  text-align: center; 
+  color: #287787;
+  background: linear-gradient(90deg,transparent,rgba(222, 62, 54, 0.568),transparent);
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.flower{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  animation-name: float;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes float{
+  from{
+    top: -25px;
+    left: 0;
+    transform:rotateX(30deg);
+  }
+  
+  35%{
+    left:100%;
+    transform:rotateX(90deg);
+  }
+  60%{
+    left: -25px;
+    transform:rotateX(45deg);
+  }
+  to{
+    top:100%;
+    left:100%;
+    transform:rotateX(180deg);
+  }
+}
+
+.buttonLogin{
+  margin-top:50%; 
+}
+.buttonLogin button{
+  margin: 10px;
+  color: salmon;
+  font-weight: 100;
+  font-size: 15px;
+  background: linear-gradient(90deg,transparent 0%,rgb(255, 255, 255),transparent);
+}
+.buttonLogin button:active{
+  background:rgba(255, 255, 255, 0.637);
+}
+
+
+.user{
+  margin: 10px;
+  position: absolute;
+  right: 0px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head{
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  margin-left: 30px;
+  border-bottom-right-radius:40px; 
+  border-bottom-left-radius:40px; 
+  opacity:0.90;
+}
+
+.textName{
+  color: skyblue;
+  border-right:1px solid #142078;
+  height: 30px;  
+  padding-right: 25px;
+}
+.textIntro{
+  color: salmon;
+  position: absolute;
+  top: 55px;
+  right: 145px;
+  font-size: 10px;
+}
+
+
+.userBox{
+  position: absolute;
+  margin-top: 100px;
+}
+.userBox image{
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+}
+.userBox view{
+  position: relative;
+  left: -120px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  
+  padding: 5px;
+  padding-left:20px; 
+  width: 120px;
+  background-color: rgba(0, 100, 0, 0.116);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  
+}
+.userBox view:active{
+  transition-duration: 100ms;
+  transform: translateX(10px);
+}
+@keyframes userKey{
+  to{
+    left: 0px;
+  }
+}
+
+.userGet{
+  animation-name: userKey;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.userActivities{
+  animation-name: userKey;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.userExit{
+  animation-name: userKey;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+.usergetInfor{
+  border: 1px solid rgba(0, 0, 0, 0.356);
+  padding: 5px;
+  margin: 20px;
+  width: 200px;
+  box-shadow: 2px 2px 0px 3px rgba(0, 0, 0, 0.11);
+}
+.box{
+  position: absolute;
+  margin-top:260px;
+  right: 0px; 
+}
+
+.Accept{
+  position: relative;
+}
+.Accept image{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  opacity:0.5;
+  transform: rotate(-30deg);
+  right: 0px;
+  top: -90px;
+}
+
+.user-num{
+  position: absolute;
+  font-size: 40px;
+  font-weight: 100;
+  font-style: oblique;
+  color: royalblue;
+}
+.user-type{
+  margin-top: 50px;
+  color: rgb(65, 166, 225);
+  font-size: 15px;
+  
+}
+.user-repire{
+  text-align: center;
+  color: rgba(250, 128, 71, 0.623);
+  font-weight: 800;
+  font-size: 20px;
+}
+.user-time{
+  text-align: right;
+  font-size: 8px;
+  font-weight: 100;
+}
+.user-decor{
+  position: absolute;
+  right: 30px;
+  font-size: 25px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.356);
+}
+
+.waitBox{
+  position: absolute;
+  top:45%;
+  left: 45%;
+  font-size: 30px;
+  font-weight: 100;
+  color: rgb(0, 4, 255);
+}

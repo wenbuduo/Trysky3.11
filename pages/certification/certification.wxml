@@ -1,0 +1,15 @@
+
+<view class="mainBox" wx:if="{{ifManagerTime}}">
+  
+  <view class="sbox2">
+    <input type="text" bindinput="addName" class="input1"></input>
+    <label>管理者称呼：</label>
+  </view>
+  <view class="sbox2">
+    <input type="text" bindinput="addwx" class="input1"></input>
+    <label>联系微信：</label>
+  </view>
+
+  <view bindtap="addInfor" class="button">确认信息</view>
+
+</view>

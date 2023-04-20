@@ -1,0 +1,17 @@
+<image class="widget__arrow" mode="widthFix" src="/icon/zx.jpg" mode="aspectFill">
+</image>
+
+<view  class="title"><text>资讯中心</text></view>
+<view>
+  <text class="title2">中心定位</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;资讯中心是踹网对外宣传的窗口，负责踹网资讯的一线传递以及 IT技术、多媒体技术的宣传和普及。推文、海报、传单，资讯中心不仅推出技术干货，在生活、时事、活动资讯等大类都有涉及。即使在疫情期间，也不断推出优质的推文。
+
+
+</text>
+<text class="title2">工作制度</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PS、AI和推文教学日常开展，微信公众号的运营和推文制作，海报的创作、各类推文排版自制是资讯人的日常。
+资讯中心历来有“吃饭中心”的同音调美称
+</text>
+</view>

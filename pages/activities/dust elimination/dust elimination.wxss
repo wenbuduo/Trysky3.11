@@ -1,0 +1,34 @@
+page{
+  background-image:linear-gradient(180deg,#CCFFFF 0%,rgba(230, 204, 255, 0.521) 100%);
+  margin: 0px;
+  padding: 0px;
+  height: 200%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  
+}
+
+.title{
+  text-align: center;
+  font-family: STKaiti;
+  font-size: 40px;
+  color: gold;
+  width: 100%;
+}
+.intro{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: larger;
+  font-family: SimHei;
+  flex-direction: column;
+  vertical-align: middle;
+}
+.type{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-family: STKaiti;
+
+}

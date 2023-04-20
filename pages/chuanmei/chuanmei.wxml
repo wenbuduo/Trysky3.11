@@ -1,0 +1,16 @@
+<image class="widget__arrow" mode="widthFix" src="/icon/cm.jpg" mode="aspectFill">
+</image>
+
+<view  class="title"><text>传媒中心</text></view>
+<view>
+  <text class="title2">中心定位</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传媒中心拥有齐全的设备和优秀的传媒人才，面向全校，为学校、各组织提供宣传视频、后期剪辑、拍摄制作和活动记录等服务，是宣传和记录汕头大学的主力军。牢记踹网“为全校师生服务”的宗旨，活跃在学校的各种活动中，为记录校园生活贡献一份力量！
+
+
+</text>
+<text class="title2">工作制度</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传媒中心努力培养一代代优秀传媒人才，不断学习和提高单反摄影、视频拍摄、后期剪辑技术。
+</text>
+</view>

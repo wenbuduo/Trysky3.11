@@ -1,0 +1,245 @@
+page{
+  background-image:linear-gradient(180deg,#CCFFFF,#FFFFCC);
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
+.body1{
+  margin: 0px;
+  padding: 0px;
+  display:flex;
+  justify-content: center;/*水平居中*/
+}
+
+.outline{
+  position:absolute;
+  margin-top: 15px;
+  padding: 5px;
+  width: 85%;
+  border: 1px solid rgba(13, 11, 112, 0.1);
+  display:flex;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.outlineText{
+  position: absolute;
+  top: -15px;
+  color: #FF9933;
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 20px;
+  backdrop-filter: blur(2px);
+  font-family: SimSun;
+}
+
+.sbox2 input{
+  border-bottom: 1px dashed rgb(255, 255, 255,1);
+  font-size: 15px;
+  padding:3px;
+  padding-left: 75px;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 200px;
+  color: rgba(0, 47, 255, 0.5);
+  font-weight: 800;
+}
+.input1{
+  margin-top: 10px;
+}
+
+.sbox2 label{
+  position: relative;
+  color: rgba(132, 0, 255, 0.3);
+  font-weight: 300;
+  top: -25px;
+  left: 15px;
+}
+
+radio-group{
+  display:flex;
+  justify-content: center;/*水平居中*/
+  margin: 3px;
+}
+
+radio-group radio{
+  position: relative;
+  color: rgba(132, 0, 255, 0.3);
+  font-weight: 300;
+  margin: 3px;
+  padding: 2px;
+}
+
+.maxmax{
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 15px;
+  padding: 3px;
+  margin: 2px;
+  color: rgba(0, 47, 255, 0.5);
+  font-weight: 800;
+  height: 100px;
+}
+
+.agreement{
+  margin: 3px;
+  display:flex;
+  justify-content: center;/*水平居中*/
+}
+
+.agreement image{
+  position: absolute;
+  left: 30px;
+  height: 20px;
+  width: 22px;
+  margin: 2px;
+}
+
+.agreement text{
+  position: absolute;
+  left: 54px;
+  color: rgba(255, 0, 0, 0.5);
+  font-weight: 300;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.occupy{
+  color: transparent;
+}
+
+.submit{
+  border: 1px solid rgba(13, 11, 112, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.178);
+  display:flex;
+  justify-content: center;/*水平居中*/
+  width: 80px;
+  position: absolute;
+  margin-top: 520px;
+  margin-left: 130px;
+  margin-bottom:10px; 
+  overflow: hidden;
+}
+.submit:active{
+  transition-duration: 100ms;
+  border: 1px inset rgba(0, 0, 139, 0.336);
+}
+.submit image{
+  padding-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.submit label{
+  padding: 5px;
+  color: #191970;
+}
+
+.decorate .photo1{
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 120px;
+  height: 30px;
+  width: 30px;
+}
+.decorate .photo2{
+  position: absolute;
+  margin-top: 345px;
+  margin-left: -140px;
+  height: 30px;
+  width: 30px;
+  transform: rotate(-45deg);
+}
+.decorate .photo2:active{
+  transition-duration: 300ms;
+  transform: rotate(180deg);
+}
+/*无法进入的界面
+
+  主要在 维护中
+
+
+*/
+
+.body2{
+  margin: 0px;
+  padding: 0px;
+  display:flex;
+  justify-content: center;/*水平居中*/
+  
+}
+
+
+
+.body2 image{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 35%;
+  left: 10%;
+}
+
+.body2 .text2{
+  position: absolute;
+  top:45%;
+  font-size: 30px;
+  font-weight: 100;
+  color: rgb(0, 4, 255);
+  overflow: hidden;
+}
+
+.ban1{
+  position: absolute;
+  display: flex;
+  flex-direction:row;
+  transform: translate(0%,-41px);
+  animation-duration:5s;
+	animation-name: BAN1;
+  animation-timing-function: linear;
+  animation-iteration-count:infinite;
+}
+.ban2{
+  position: absolute;
+  display: flex;
+  flex-direction:row;
+  transform: translate(-100%,-41px);
+  animation-duration:5s;
+	animation-name: BAN2;
+  animation-timing-function: linear;
+  animation-iteration-count:infinite;
+}
+
+.text2 .ban1 view{
+  color: transparent;
+  width: 25px;
+  margin-left:25px;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.3);
+  transform:skewX(-30deg);
+}
+.text2 .ban2 view{
+  color: transparent;
+  width: 25px;
+  margin-left:25px;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.3);
+  transform:skewX(-30deg);
+}
+
+
+@keyframes BAN1{
+  100%{
+    transform: translate(100%,-41px);
+  }
+}
+
+@keyframes BAN2{
+  100%{
+    transform: translate(0%,-41px);
+  }
+}
+

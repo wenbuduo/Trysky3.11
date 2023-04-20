@@ -1,0 +1,24 @@
+<!--pages/demo5/demo5.wxml-->
+<view  class="title"><text>《踹网除尘协议书》</text></view>
+<view>
+<view class="annotations"><text>(尊敬的客户您好，事关您的切身利益，请在接受服务前认真阅读以下内容)
+</text></view>
+<text class="title2">一、 关于除尘注意事项</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;踹——成功之路网提供的是免费为在校师生进行电脑除尘服务，不会要求客户提供任何报酬。若有遇到要求提供任何报酬的情况，后果由踹网承担，并且可以要求工作人员出示工作证以确认其身份。若因他人冒充踹网的工作人员，而造成客户任何损失的，后果由客户自行承担。
+</text>
+<text class="title2">二、 关于除尘注意事项</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.需确保电脑电量充足（70%以上）电脑能够正常开机使用；2.拆机除尘的客户必须带上适配器前往。
+</text>
+<text class="title2">三、 关于拆机除尘问题</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术中心的工作人员会在征得客户同意且让客户确认电脑已过保修期后，再进行拆机除尘。若有未征得客户同意而擅自拆机导致电脑丧失保修资格甚至损坏电脑的情况，后果由踹网承担，同时请及时联系技术中心总监并要求工作人员出示工作证以确认其身份。若经工作人员提醒后，仍因机主疏忽而造成电脑丧失保修资格的，后果由客户自行承担。
+</text><text class="content" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;原则上不建议年龄长达4年以上（从生产日期算起）、近期进过水或有进水历史、有硬件大修历史（如进水烧坏过主板或更换过主板等）的电脑进行拆机除尘，此类电脑极其脆弱，拆机除尘容易导致后续产生无法开机等一系列问题。上述情况经工作人员提醒后，客户仍坚持要求拆机除尘的，后果由客户自行承担。
+</text>
+<text class="title2">四、 关于工作人员权益问题</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术中心的工作人员都怀着一颗服务汕大师生的心去学习各种电脑技术，并利用自己的空闲时间来为汕大师生服务。但是这并不说明可以帮助师生解决一切问题，若问题实在超出了工作人员技术范围的，只能建议客户前往更专业的维修店。若在服务过程中因客户不当的言行举止而对工作人员造成精神损害的，工作人员有权利拒绝继续提供义修服务，对此有疑议的请直接联系技术中心总监。
+</text>
+<view class="annotations"><text>(本协议的最终解释权归踹——成功之路网理事会所有)</text></view>
+</view>
