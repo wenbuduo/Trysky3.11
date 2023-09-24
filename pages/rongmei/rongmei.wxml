@@ -1,0 +1,45 @@
+<!--pages/rongmei/rongmei.wxml-->
+<image src="../../icon/flower.png" class="flower"></image>
+<image src="../../icon/flower.png" class="flower1"></image>
+<view class="box" style="{{boxStyle}}"></view>
+<swiper class="content-info-slide" indicator-color="rgba(255,255,255,.5)" 
+indicator-active-color="#fff" indicator-dots circular autoplay interval="2000">
+
+<swiper-item>
+<text class="xixi">这就是我们</text>
+</swiper-item>
+<swiper-item>
+<image src="icon/融媒1.jpg"></image>
+</swiper-item>
+<swiper-item>
+<image src="icon/融媒2.jpg"></image>
+</swiper-item>
+<swiper-item>
+<image src="icon/融媒3.jpg"></image>
+</swiper-item>
+<swiper-item class="xixi">
+<text>这就是我们——</text>
+<text>\n</text>
+<text>喜欢摄影 热爱生活</text>
+</swiper-item>
+<swiper-item>
+<image src="icon/融媒5.jpg"></image>
+</swiper-item>
+</swiper>
+
+<view  class="title"><text>融媒中心</text></view>
+<image class="icon" src="icon/开心.png"></image>
+  <text class="title2">中心定位</text>
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;融媒中心负责整个踹网的视频、海报、推文等新媒体的设计与产出，开展PS、AL、PR和推文制作、海报设计，视频剪辑、摄影摄像的日常教学。各位总监干事致力于收集与发布校内的第一手资讯，为同学们带来更加丰富多彩的校园生活记录，培养了一批批优秀的复合型人才，为踹网和学校的发展添砖加瓦。
+
+
+</text>
+<image class="icon" src="icon/喜欢.png"></image>
+<text class="title2">工作制度</text>
+
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;融媒中心努力培养一代代优秀传媒人才，不断学习和提高新媒体运营能力。
+
+
+</text>

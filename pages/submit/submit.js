@@ -1,4 +1,4 @@
-const DB = wx.cloud.database().collection("NewTryskyData")
+const DB = wx.cloud.database().collection("xiuji2023")
 const MDB = wx.cloud.database().collection("ChangeData")
 let name=""
 let wxnum=""
@@ -10,12 +10,10 @@ let type=""
 let details=""
 let time=""
 let totalLen=0
-let open ='cbddf0af6093951806b5918b6ccc66eb'
-let msgID ='b00064a760989c1b162c195872f2c647'
-
+let open ='e8d27cb364f44fab00dc8fda49127843'
 Page({
   data: {
-    ifOpen:false,
+    ifxiuji:false,
     msg:'',
     check:false,
     agImage:"../../icon/error.png",
@@ -25,7 +23,7 @@ Page({
     MDB.doc(open).get()
     .then(res =>{
       this.setData({
-        ifOpen:res.data.ifOpen
+        ifxiuji:res.data.ifOpen
       })
     })
     .catch(res =>{
@@ -42,18 +40,13 @@ Page({
     MDB.doc(open).get()
       .then(res => {
         this.setData({
-          ifOpen: res.data.ifOpen
+          ifxiuji: res.data.ifOpen
         })
       })
       .catch(res => {
-        //console.log(res)
       })
   },
-  // clickTest(){
-  //   console.log("点到我了！")
-  // },
   addName(e){
-    //console.log(e.detail.value);
     name=e.detail.value
   },
   addWechat(e){

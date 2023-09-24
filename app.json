@@ -1,23 +1,26 @@
 {
   "pages": [
-       "pages/chuchen/chuchen",
-    "pages/MainPage/MainPage",
-      
-    "pages/managers/managers",
-    "pages/myorder/myorder",
+
     "pages/managersMain/managersMain",
-    "pages/certification/certification",
-    "pages/submit/submit",
-    "pages/agreement/agreement",
-    "pages/introduce/introduce",
-    "pages/activities/activities",
+    "pages/myorder/myorder",
     "pages/logs/logs",
+    "pages/submit/submit",
+    "pages/managersMaintest/managersMaintest",
+    "pages/MainPage/MainPage", 
+    "pages/certification/certification",
+    "pages/rongmei/rongmei",
+    "pages/yunwei/yunwei",
+    "pages/jishu/jishu",
     "pages/xingzheng/xingzheng",
     "pages/shangwu/shangwu",
-    "pages/jishu/jishu",
-    "pages/yunwei/yunwei",
-    "pages/zixun/zixun",
-    "pages/chuanmei/chuanmei",
+    "pages/activities/activities",
+    "pages/activityone/acticityone",  
+    "pages/activitytwo/acticitytwo",  
+    "pages/activitythree/acticitythree",  
+    "pages/chuchen/chuchen",
+    "pages/managers/managers",
+    "pages/agreement/agreement",
+    "pages/introduce/introduce",
     "pages/agreement2/agreement2"
   ],
   "tabBar": {
@@ -61,6 +64,9 @@
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-       "van-notice-bar": "vant-weapp/notice-bar/index"
+       "van-notice-bar": "vant-weapp/notice-bar/index",
+       "van-card": "vant-weapp/card/index",
+       "van-tag": "vant-weapp/tag/index"
+
      }
 }

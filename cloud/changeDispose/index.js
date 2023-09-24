@@ -6,8 +6,7 @@ cloud.init()
 // 云函数入口函数
 exports.main = async (event, context) => {
   const wxContext = cloud.getWXContext()
-
-  return cloud.database().collection("NewTryskyData")
+  return cloud.database().collection("xiuji2023")
     .doc(event.id)
     .update({
       data: {

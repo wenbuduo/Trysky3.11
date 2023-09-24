@@ -6,14 +6,16 @@ page{
   width: 100%;
   background-repeat: no-repeat;
   background-attachment:fixed;
-}
-
-.list1{
   position: relative;
   display: flex;
 justify-content:center;
   flex-direction: column;
   align-items: center;
+}
+
+.list1 view{
+       margin-top: 28rpx;
+       padding-bottom: 15rpx;
 }
 
 .list1 view navigator{
@@ -36,12 +38,30 @@ justify-content:center;
 }
 
 .test1{
-  color: rgb(209, 66, 61);
+  /* color: rgb(209, 66, 61); */
   font-weight: 100;
   font-size: 40px;
   font-family: 'KaiTi';
   text-align: center;
+  letter-spacing: 0.2rem;
+  /* font-size: 1.5rem; */
+  background-image: -webkit-linear-gradient(left, #147B96, #E6D205 25%, #147B96 50%, #E6D205 75%, #147B96);
+  /* -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-background-size: 200% 100%;
+
+-webkit-animation: maskedAnimation 4s infinite linear; */
 }
+@keyframes maskedAnimation {
+       0% {
+           background-position: 0 0;
+       }
+   
+       100% {
+           background-position: -100% 0;
+       }
+   }
+
 
 .icon{
   height: 30px;                                              /**小图标的大小设定**/

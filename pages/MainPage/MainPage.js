@@ -1,12 +1,5 @@
-let choose1 = false;
-let choose2 = false;
-let choose3 = false;
-let photoid = "28ee4e3e609d5318185d75f86a8994b7";
+let photoid = "43e67d8d64f3ff3300d3d6ac6d4a162d";
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     touch1:false,
     touch2:false,
@@ -14,16 +7,21 @@ Page({
     photo1:"",
     photo2: "",
     photo3: "",
+    gundong:"",
+    isluru:"",
   },
   getPhoto(){
     wx.cloud.database().collection("ChangeData")
     .doc(photoid)
     .get()
     .then(res=>{
+      console.log(res.data);
       this.setData({
         photo1: res.data.photo1,
         photo2: res.data.photo2,
-        photo3: res.data.photo3
+        photo3: res.data.photo3,
+        gundong:res.data.gundong,
+        isluru:res.data.isMa
       })
     })
     .catch(res=>{
@@ -31,24 +29,22 @@ Page({
     })
   },
   photoTouch1(){
-    if(choose1){
+    if(this.data.touch1){
+      console.log(touch1);
       this.setData({
         touch1:false
       })
-      choose1=false;
     }else{
       this.setData({
         touch1: true
       })
-      choose1 = true;
     }
   },
   photoTouch2() {
-    if (choose2) {
+    if (this.data.touch2) {
       this.setData({
         touch2: false
       })
-      choose2 = false;
     } else {
       this.setData({
         touch2: true
@@ -57,27 +53,28 @@ Page({
     }
   },
   photoTouch3() {
-    if (choose3) {
+    if (this.data.touch3) {
       this.setData({
         touch3: false
       })
-      choose3 = false;
     } else {
       this.setData({
         touch3: true
       })
-      choose3 = true;
     }
   },
   inn(){
-    wx.navigateTo({
-      url: '../../pages/certification/certification',
-      success: function(res) {},
-      fail: function(res) {
-        console.log("失败")
-      },
-      complete: function(res) {},
-    })
+    if(this.data.isluru){
+      wx.navigateTo({
+        url: '../../pages/certification/certification',
+        success: function(res) {},
+        fail: function(res) {
+          console.log("失败")
+        },
+        complete: function(res) {},
+      })
+    }
+    
   },
   bottom(){
     wx.showToast({
@@ -85,17 +82,9 @@ Page({
       title: '完善中',
     })
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
     this.getPhoto()
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
 
   },

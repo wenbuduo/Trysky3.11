@@ -1,4 +1,4 @@
-<image class="widget__arrow" mode="widthFix" src="/icon/js.jpg" mode="aspectFill">
+<!-- <image class="widget__arrow" mode="widthFix" src="/icon/js.jpg" mode="aspectFill">
 </image>
 
 <view  class="title"><text>技术中心</text></view>
@@ -13,4 +13,24 @@
 <text class="content" decode="{{true}}" space="{{true}}">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术中心以提高自己的技术水平，为汕大师生免费维修手机电脑为己任。获得师生一致好评。会在日常修机过程中探索新的技术，如系统封装、手机换屏、刷机等。
 </text>
+</view> -->
+
+<image class="widget__arrow" mode="widthFix" src="/icon/js.jpg" mode="aspectFill">
+</image>
+
+<view  class="title"><text>技术中心</text></view>
+<view>
+  <text class="title2" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中心定位</text>
+<view class="hengxiang">
+<text class="content1" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是踹网的骨干力量，踹网的基石，核心部门，主攻IT技术、桌面工程多媒体技术是踹网的技术代表。本中心的培训内容有电脑软硬件的相关知识，如系统重装、拆机维修等。</text>
+<image style="width: 300px; height: 150px;" src="/icon/微信图片_20220506200859.jpg"></image>
+</view>
+<text class="title2" decode="{{true}}" space="{{true}}">工作制度</text>
+<view class="hengxiang">
+<image style="width: 200px; height: 150px;" src="/icon/微信图片_202205062008591.jpg"></image>
+<text class="content2" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技术中心以提高自己的技术水平，为汕大师生免费维修手机电脑为己任。获得师生一致好评。会在日常修机过程中探索新的技术，如系统封装、手机换屏、刷机等。
+</text>
+</view>
 </view>

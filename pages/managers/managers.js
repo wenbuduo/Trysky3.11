@@ -1,4 +1,4 @@
-const DB = wx.cloud.database().collection("NewTryskyData")
+const DB = wx.cloud.database().collection("xiuji2023")
 const NEWDB = wx.cloud.database().collection("NewUserData")
 let uesrID=""
 let open=1

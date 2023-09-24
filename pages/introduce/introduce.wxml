@@ -29,25 +29,20 @@
   <view class="test1">运维中心</view>
   </navigator></view>
 
-  
 
-  <view><navigator url="../../pages/zixun/zixun" hover-class="buling">
-  
-  <image src="../../icon/zixun.png" class="icon" ></image>
-  <view class="test1">资讯中心</view>
-  </navigator></view>
-
-</view>
-
-
-  <view><navigator url="../../pages/chuanmei/chuanmei" hover-class="buling">
+  <view><navigator url="../../pages/rongmei/rongmei" hover-class="buling">
   
   <image src="../../icon/chuanmei.png" class="icon" ></image>
-  <view class="test1">传媒中心</view>
+  <view class="test1">融媒中心</view>
   </navigator></view>
-</view>
+
 
 </view>
+
+
+</view>
+</view>
+
 
 
 

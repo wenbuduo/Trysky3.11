@@ -1,6 +1,35 @@
 // pages/activities/activities.js
 Page({
-
+       niubi(){
+              wx.navigateTo({
+                url: '../../pages/activities/dustelimination/dustelimination.wxml',
+              })
+       },
+       acticityones(){
+              console.log("点击了标签"),
+              wx.navigateTo({
+                     url: '../../pages/activityone/acticityone',
+                   })
+       },
+       acticitytwos(){
+              console.log("点击了标签"),
+              wx.navigateTo({
+                     url: '../../pages/activitytwo/acticitytwo',
+                   })
+       },
+       acticitythrees(){
+              console.log("点击了标签"),
+              wx.navigateTo({
+                     url: '../../pages/activitythree/acticitythree',
+                   })
+       },
+       acticityfours(){
+              console.log("点击了标签"),
+              wx.showToast({
+                title: '正在完善中，更多信息请关注踹网官方公众号“TrySky”',
+                icon:'none'
+              })
+       },
   /**
    * 页面的初始数据
    */

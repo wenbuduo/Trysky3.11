@@ -1,16 +1,37 @@
-<image class="widget__arrow" mode="widthFix" src="/icon/sw.jpg" mode="aspectFill">
+<image src="../../icon/flower.png" class="flower"></image>
+<image src="../../icon/flower.png" class="flower1"></image>
+<swiper autoplay indicator-dots="true" ><swiper-item>
+<image class="widget__arrow" mode="widthFix" src="icon/1.jpg" mode="aspectFill">
 </image>
+</swiper-item>
+<swiper-item>
+<image class="widget__arrow" mode="widthFix" src="icon/2.jpg" mode="aspectFill">
+</image>
+</swiper-item>
+<swiper-item>
+<image class="widget__arrow" mode="widthFix" src="icon/3.jpg" mode="aspectFill">
+</image>
+</swiper-item>
+</swiper>
 
-<view  class="title"><text>商务中心</text></view>
-<view>
-  <text class="title2">中心定位</text>
-<text class="content" decode="{{true}}" space="{{true}}">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;负责踹网的公关赞助，是与商家进行交流的桥梁。在这里你可以第一线去跟商家交流，更加直接的去接触电商，电竞等当前比较前沿的产业。
 
-
-</text>
-<text class="title2">工作制度</text>
-<text class="content" decode="{{true}}" space="{{true}}">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赞助演练到实战谈判，给你一个模拟商业谈判精英的机会。零距离接触各种商业boss，在这里你可以第一线去跟商家交流，提高社交能力。
-</text>
+<view class="all">
+  <view class="head-bg" ><text class="title2"decode="{{true}}" space="{{true}}"color="white">&nbsp;中心定位</text>
+  </view>
+  <view>
+  <text class="content" decode="{{true}}" space="{{true}}">
+  &nbsp;&nbsp;&nbsp;&nbsp;主要责任是负责踹网的公关赞助，是踹网与商家进行交流的桥梁，是踹网活动的资金组。在这里，你可以直接和商家进行交流，更加提前的去接触电商，电竞等比较前沿的产业。同时可以锻炼你的表达能力，社交能力，是一个很好的成长平台。
+ </text>
+ </view>
 </view>
+<view class="all">
+  <view class="head-bg1" >
+  <text class="title2"decode="{{true}}" space="{{true}}">&nbsp;工作内容</text>
+  </view>
+  <view>
+  <text class="content" decode="{{true}}" space="{{true}}">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从赞助演练到实战谈判，给予你一个模拟商业谈判精英的机会。可以零接触的接触各种商业boss，可以第一线去跟商家交流，尽你的能力为踹网拉来更多的赞助，促使活动更完美的举行。
+  </text>
+  </view>
+</view>
+<navigator url=""></navigator>

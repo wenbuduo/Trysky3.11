@@ -1,49 +1,190 @@
-page{
-  background-image:linear-gradient(180deg,#CCFFFF 0%,rgba(230, 204, 255, 0.521) 100%);
-  margin: 0px;
-  padding: 0px;
-  height: 200%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  
-}
-
-.widget__arrow{
-  margin: 2px;
-  height: 200px;
-  width: 355px;
-  font-weight: 100;
-  font-size: large;
-}
-.title{
-  text-align: center;
-  font-size: 25px;
-  font-weight: 1000;
-  color: 	#33bdf3;
-  margin: 5px;
-}
-
-.annotations{
-  text-align: center;
-  font-size: 10px;
-  color: 	#FF9933;
-  margin: 3px;
-  font-style: oblique;
-}
-
-.title2{
-  font-size: 17px;
-  font-weight: 600;
-  margin: 3px;
-  color: #080808;
-}
-
-.content{
-  margin: 2px;
-  font-weight: 200;
-}
-
-text{
-  margin: 5px;
+.loadingEight {
+       width: 80px;
+       height: 80px;
+       border-radius: 50%;
+       margin: 50% auto;
+       position: relative;
+       z-index: 1;
+       border: 5px solid lightgreen;
+       animation: turn .5s linear ;
+     }
+     .board{
+       z-index: 2;
+       display: inline-block;
+       width: 30px;
+       height: 30px;
+       border-radius: 50%;
+       background: rgb(238, 216, 144);
+       position: absolute;
+       left: 50%;
+       top: 0%;
+       margin-top: 30px;
+       margin-left: -15px;
+       animation: Bebig 2s linear;
+     }
+     .loadingEight .span {
+       opacity: 0;
+       z-index: 1;
+       display: inline-block;
+       width: 30px;
+       height: 30px;
+       border-radius: 50%;
+       background: lightgreen;
+       position: absolute;
+       left: 50%;
+       margin-top: -15px;
+       margin-left: -15px;
+       animation: changeBgColor 2s linear ;
+     }
+     @keyframes Bebig{
+       0%{
+         opacity: 0;
+       }
+       25%{
+         background-color: lightblue;
+         width: 30px;
+         height: 30px;
+       }
+       49.9%{
+         opacity: 0;
+         scale: 0;
+       }
+       50%{
+         opacity: 1;
+         
+       }
+       100%{
+         opacity: 1;
+         scale: 50;
+       background-image:linear-gradient(125deg,#87bfeb,#afd9ec,#b8eee9);
+     
+       }
+     }
+     @keyframes changeBgColor {
+       0% {
+           background: lightgreen;
+           opacity: 1;
+       }
+       12.5%{
+         top: 25%;
+       }
+       25%{
+         top: 50%;
+       }
+       50%{
+         top: 50%;
+         opacity: 0;
+       }
+       75%{
+       }
+       100% {
+           background: rgb(45, 228, 213);
+     
+       }
+     }
+     
+     @keyframes turn {
+       0% {
+           -webkit-transform: rotate(0deg);
+           border-color: lightgreen;
+       }
+     
+       100% {
+           -webkit-transform: rotate(360deg);
+           border-color: lightblue;
+       }
+     }
+     page{
+       background-image:linear-gradient(125deg,#a1f5ba,#47baf0,#f1b4c3);
+       background-image:linear-gradient(125deg,#87bfeb,#afd9ec,#b8eee9);
+       margin: 0px;
+       position: relative;
+       padding: 0px;
+       height:100%;
+       width: 100%;
+       background-size:400% ;
+       animation: bganimation 10s infinite;
+       background-repeat: no-repeat;
+       background-attachment:fixed;
+       font-family:cursive;
+       font-size: larger;
+       letter-spacing: 1px;
+       line-height: 25px;
+     }
+     @keyframes bganimation{
+       0%{
+         background-position: 0% 50%;
+       }
+       50%{
+         background-position: 100% 50%;
+       }
+       100%{
+         background-position: 0% 50%;
+       }
+     }
+     
+     .image{
+       margin: 10px 0px 3px 0px;
+       height: 240px;
+       width: 100%;
+       font-weight: 100;
+       font-size: large;
+     }
+     .zx{
+       margin: 10px 8px;
+     }
+     .title2{
+       font-size: 17px;
+       font-weight: 600;
+       margin: 3px;
+       color: #5e6cbe;
+     }
+     
+     .content{
+       margin: 5px 30px 5px 30px;
+       font-weight: 200;
+     }
+     
+     .text{
+       margin: 5px;
+     }
+     
+     .title{
+       text-align: center;
+       font-size: 25px;
+       font-weight: 1000;
+       color:rgba(75, 72, 248, 0.719);
+       margin-top: 20px;
+       margin-bottom: 20px;
+     }
+     .zhuli{
+       display: flex;
+       height: 39px;
+       width: 100%;
+       justify-content: center;
+       font-size: 14px;
+       color: rgb(80, 80, 80);
+       
+     }
+     .zhuli .like{
+       font-size: 19px;
+     }
+     .zhuli .wz{
+       padding: 4px 0 0 2px;
+     }
+     .zhuli:hover{
+       color: rgba(243, 34, 34, 0.644);
+     }
+     swiper{
+       width: 100%;
+       height: 240px;
+     }
+     image{
+       width: 100%;
+       height: 100%;
+     
+     }
+     .wenzi{
+       width: 92%;
+       margin: 0 auto;
 }

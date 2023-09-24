@@ -1,0 +1,14 @@
+<view  class="title"><text>电脑培训营</text></view>
+<view>
+       <view class="type2">🖥️ 想了解电脑操作技巧吗？</view>
+       <view class="type2"> 🔒希望掌握网络安全知识吗？</view>
+       <view class="type2">  💻想提高办公效率和技能吗？</view>
+       <view decode="{{true}}" space="{{true}}">
+
+<text class="content" decode="{{true}}" space="{{true}}">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每年一度的踹网电脑培训营将满足您的需求！我们的培训课程涵盖广泛的电脑知识，包括基础操作、常用软件应用、网络安全等方面。不论您是电脑小白还是想进一步提升技能的高手，我们都有适合您的课程。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们注重实用性和互动性，通过专业指导和实践演练，让您轻松掌握所需技能。参加培训后，你会更自信地应对电脑操作，提高工作效率，享受更便捷的电脑生活。
+</text>
+</view>
+
+</view>

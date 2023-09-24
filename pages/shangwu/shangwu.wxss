@@ -1,4 +1,4 @@
-page{
+/* page{
   background-image:linear-gradient(180deg,#CCFFFF 0%,rgba(230, 204, 255, 0.521) 100%);
   margin: 0px;
   padding: 0px;
@@ -45,4 +45,189 @@ page{
 
 text{
   margin: 5px;
-}
+} */
+
+
+
+  
+/* background-image: url(https://636c-cloud1-9gvzes2n00ef99cf-1310335705.tcb.qcloud.la/background.jpg?sign=9a1f55e64e5ae729ba99ca78c2526865&t=1649553207); */
+ 
+/* background-size: 100% 100%; */
+
+
+   /* 有给定角度的线性渐变： */
+
+   page{
+       background-image:linear-gradient(180deg,#CCFFFF 0%,rgba(230, 204, 255, 0.521) 100%);
+       margin: 0px;
+       padding: 0px;
+       height: 100%;
+       width: 100%;
+       background-repeat: no-repeat;
+       background-attachment:fixed;
+       font-family:cursive;
+       font-size: larger;
+       letter-spacing: 1px;
+       line-height: 25px;
+       
+     }
+     
+     /* .widget__arrow{
+       margin: 2px;
+       width: 315px;
+       font-weight: 100;
+       font-size: large;
+     } */
+     
+     
+     
+     .head-bg{
+       padding-right: 1ex;
+       padding-left: 1ex;
+       margin:9px;
+       background-image: url(https://636c-cloud1-9gvzes2n00ef99cf-1310335705.tcb.qcloud.la/P1.jpg?sign=5f47f51e36f870492bb5fac3ec079df0&t=1651071206);
+       background-size: 100% 100%;
+       border-radius:30px ;
+       margin-bottom: 1.5px;
+       height: 5%;
+     
+      
+     }
+     .head-bg1{
+       margin:9px;
+       padding-right: 1ex;
+       padding-left: 1ex;
+       background-image: url(https://636c-cloud1-9gvzes2n00ef99cf-1310335705.tcb.qcloud.la/P2.jpg?sign=c565f87fdca71622fab6907861b89bb8&t=1651071459);
+       background-size: 100% 100%;
+       border-radius:30px ;
+       margin-bottom: 1.5px;
+       height: 5%;
+      
+     }
+     
+     .annotations{
+       text-align: center;
+       font-size: 10px;
+       
+       margin: 3px;
+       font-style: oblique;
+     }
+     
+     .title2{
+       font-size: 20px;
+       
+       font-weight: 600;
+      
+       color:rgba(0, 0, 0, 0.568);
+       
+     }
+     .all{
+       width: 90%;
+       display:flex;
+       align-items:center;
+     }
+     .content{
+       margin: 2px;
+       font-weight: 100rpx;
+       color: black;
+       width: 20%;
+     }
+     
+     text{
+       margin: -12px;
+     }
+     
+     
+     view{
+       
+       background-color: beige();
+     }
+     
+     swiper{
+       width: 100%;
+       height:calc(100vw*651/1080);
+       
+     }
+     
+     image{
+       width: 100%;
+     }
+     .flower1{
+       position:relative;
+       width: 30px;
+       height: 30px;
+       top: 0;
+       animation-name: float1;
+       animation-duration: 30s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease-in-out;
+     }
+     .flower{
+       position:relative;
+       width: 30px;
+       height: 30px;
+       top: 0;
+       animation-name: float;
+       animation-duration: 15s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease-in-out;
+     }
+     @keyframes float{
+       from{
+         top: -25px;
+         left: 0;
+         transform:rotateX(30deg);
+       }
+       
+       35%{
+         left:100%;
+         transform:rotateX(90deg);
+       }
+       60%{
+         left: -25px;
+         transform:rotateX(45deg);
+       }
+       to{
+         top:100%;
+         left:100%;
+         transform:rotateX(180deg);
+       }
+     }
+     .flower1{
+       position:relative;
+       width: 30px;
+       height: 30px;
+       top: 0;
+       animation-name: float1;
+       animation-duration: 15s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease-in-out;
+     }
+     @keyframes float1{
+       from{
+         top: -25px;
+         left: 100%;
+         transform:rotateX(30deg);
+       }
+       
+       35%{
+        left: 0;
+         transform:rotateX(90deg);
+       }
+       60%{
+         left: 100%;
+         transform:rotateX(45deg);
+       }
+       to{
+         top:100%;
+         left: 0;
+         transform:rotateX(180deg);
+       }
+     }
+     .title{
+       text-align: center;
+       font-size: 25px;
+       font-weight: 1000;
+       color:#37afdf;
+       margin-top: 20px;
+     }

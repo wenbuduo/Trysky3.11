@@ -1,9 +1,6 @@
-<view class="body1" wx:if="{{ifOpen}}">
-       <!-- <view class="body1" wx:if="{{false}}"> -->
+<view class="body1" wx:if="{{ifchuchen}}">
        <view class="outline">
-
               <text space="nbsp" class="outlineText">除尘活动报名 </text>
-
               <form>
                      <view class="sbox2">
                             <input type="text" maxlength="10" bindinput="addName" class="input1"></input>
@@ -41,49 +38,19 @@
                             <image src="{{agImage}}" bindtap="agreementCheck"></image>
                             <navigator url="../../pages/agreement/agreement"><text>(点亮图标)同意《除尘协议书》</text></navigator>
                      </view>
-<!-- 
-                     <view class="sbox3">
-                            <label>特别提醒：</label>
-                            <text>今年的除尘地点仅在桑浦山校区二三饭</text>
-                     </view> -->
-
                      <view class="occupy">1</view>
-                     <view class="occupy">1</view>
-
               </form>
-
        </view>
-
        <view class="submit" bindtap="addData">
               <image src="../../icon/submit.png"></image>
               <label>提交</label>
        </view>
-
        <view class="decorate">
               <image src="../../icon/starfish.png" class="photo1"></image>
               <image src="../../icon/shell.png" class="photo2" bindtap="renew"></image>
        </view>
-
 </view>
-
 <view class="body2" wx:else bindtap="renew">
-       <view class="text2">
-              {{msg}}
-              <view class="ban1">
-                     <view>1</view>
-                     <view>2</view>
-                     <view>3</view>
-                     <view>4</view>
-                     <view>5</view>
-              </view>
-              <view class="ban2">
-                     <view>1</view>
-                     <view>2</view>
-                     <view>3</view>
-                     <view>4</view>
-                     <view>5</view>
-              </view>
-
-       </view>
+       <view class="text2">活动暂未开放</view>
        <image src="../../icon/ban.png"></image>
 </view>

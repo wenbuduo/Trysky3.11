@@ -1,12 +1,9 @@
 <view>
   <text class="title" bindtap="back">返回</text>
-  <view class="decor1">1</view>
-  <view class="decor2">1</view>
 </view>
 
 <view>
   <block wx:for="{{orderInfor}}" wx:key="item" wx:for-index="index">
-  
     <view class="showBox">
       <view class="typeDecoration">{{item.type}}</view>
       <view class="main">

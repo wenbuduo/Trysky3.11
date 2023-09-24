@@ -42,9 +42,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // setTimeout(this.yanchi(),4000)
+    this.dakai()
   },
-
+  dakai(){
+    setTimeout(this.yanchi,2000)
+  },
+  yanchi(){
+    this.setData({
+      appear:true
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

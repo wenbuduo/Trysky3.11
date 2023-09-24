@@ -1,69 +1,51 @@
-
 <view class="body1">
-       <van-notice-bar class="gundong"
-  left-icon="volume-o"
-  text="汕头大学第十七届电子竞技大赛正式开始报名啦！！！海量奖品等你来拿，具体活动事项请关注踹网公众号获取更详细活动内容。"
-/>
-
+  <van-notice-bar class="gundong" left-icon="volume-o" text="{{gundong}}" />
   <view class="Photobox">
-  
     <view class="photo1">
       <view wx:if="{{touch1}}">
-        <image src="{{photo1}}"  class="photo12" bindtap="photoTouch1"></image>
+        <image src="{{photo1}}" class="photo12" bindtap="photoTouch1"></image>
       </view>
       <view wx:else>
-        <image src="{{photo1}}"  class="photo11" bindtap="photoTouch1"></image>
+        <image src="{{photo1}}" class="photo11" bindtap="photoTouch1"></image>
       </view>
     </view>
 
     <view class="photo2">
       <view wx:if="{{touch2}}">
-        <image src="{{photo2}}"  class="photo22" bindtap="photoTouch2"></image>
+        <image src="{{photo2}}" class="photo22" bindtap="photoTouch2"></image>
       </view>
       <view wx:else>
-        <image src="{{photo2}}"  class="photo21" bindtap="photoTouch2"></image>
+        <image src="{{photo2}}" class="photo21" bindtap="photoTouch2"></image>
       </view>
     </view>
 
-
-
-   <view class="photo3">
+    <view class="photo3">
       <view wx:if="{{touch3}}">
-        <image src="{{photo3}}"  class="photo32" bindtap="photoTouch3"></image>
+        <image src="{{photo3}}" class="photo32" bindtap="photoTouch3"></image>
       </view>
       <view wx:else>
-        <image src="{{photo3}}"  class="photo31" bindtap="photoTouch3"></image>
+        <image src="{{photo3}}" class="photo31" bindtap="photoTouch3"></image>
       </view>
     </view>
-
   </view>
-
-  <view class="tw">
-    <view>踹</view>
-    <view>网</view>
-  </view>
-  
-  <view class="tslogo" bindlongtap="inn">Trysky</view>
-  
-  <view class="list1">
-    <view><navigator url="../../pages/activities/activities" hover-class="buling">
-    
-    <image src="../../icon/activities.png" class="icon" ></image>
-    <view class="test1">活动</view>
-    </navigator></view>
-
-    <view><navigator url="../../pages/introduce/introduce" hover-class="buling">
-    
-    <image src="../../icon/information.png" class="icon" ></image>
-    <view class="test1">我们</view>
-    </navigator></view>
-    
-  </view>
-
-  <view class="bottom" bindtap="bottom">@联系我们</view>
-
+  <view class="box2" bindlongtap="inn">TrySky</view>
 </view>
+<view class="jiaohu">
+  <view class="list1">
+    <view class="huodong">
+      <navigator url="../../pages/activities/activities" hover-class="buling">
+        <image src="../../icon/activities.png" class="icon"></image>
+        <view class="test1">活动</view>
+      </navigator>
+    </view>
 
-
-
-
+    <view class="huodong">
+      <navigator url="../../pages/introduce/introduce" hover-class="buling">
+        <image src="../../icon/information.png" class="icon"></image>
+        <view class="test1">我们</view>
+      </navigator>
+    </view>
+  </view>
+ 
+  <view class="bottom" bindtap="bottom">@联系我们</view>
+</view>

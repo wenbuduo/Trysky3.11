@@ -1,60 +1,59 @@
-let name=""
-let wxNum=""
-let check=true
-let id ="28ee4e3e609d1ba3185213925ba8ff5a"
+let name = ""
+let wxNum = ""
+let check = true
+let id = "43e67d8d64f40e1d00d57543317dc470"
 Page({
   data: {
-    ifManagerTime:false
+    ifManagerTime: false,
   },
-  onLoad:function(options){
+  onLoad: function (options) {
     this.getTime()
   },
-  addName(e){
-    // console.log(e.detail.value)
+  addName(e) {
     name = e.detail.value
   },
-  addwx(e){
+  addwx(e) {
     wxNum = e.detail.value
   },
-  addInfor(){
-    if (this.data.ifManagerTime){
-      if (check){
-        if(name!=""&&wxNum!=""){
-          wx.cloud.database().collection("managers")
+  addInfor() {
+    if (this.data.ifManagerTime) {
+      if (name != "" && wxNum != "") {
+        wx.cloud.database().collection("managers")
           .add({
-            data:{
-              name:name,
-              wxNum:wxNum,
-              ifDirector:false
+            data: {
+              name: name,
+              wxNum: wxNum,
+              ifDirector: false
             }
           })
-          .then(res =>{
-            check=false
+          .then(res => {
+            check = false;
             wx.showToast({
               title: '认证成功',
-              icon:'none'
+              icon: 'none'
+            })
+            this.setData({
+              name: "",
+              wxNum: "",
+              ifDirector: false,
             })
           })
-        }
-        else{
-          wx.showToast({
-            title: '信息未完善',
-            icon: 'none'
-          })
-        }
+      } else {
+        wx.showToast({
+          title: '信息未完善',
+          icon: 'none'
+        })
       }
     }
   },
-  getTime(){
-    wx.cloud.database().collection("ChangeData")
+getTime() {
+  wx.cloud.database().collection("ChangeData")
     .doc(id)
     .get()
-    .then(res=>{
+    .then(res => {
       this.setData({
         ifManagerTime: res.data.ifManagerTime
       })
     })
-  }
-
-
+},
 })

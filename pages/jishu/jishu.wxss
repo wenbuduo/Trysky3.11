@@ -6,6 +6,10 @@ page{
   width: 100%;
   background-repeat: no-repeat;
   background-attachment:fixed;
+  font-family:cursive;
+  font-size: larger;
+  letter-spacing: 1px;
+  line-height: 25px;
   
 }
 
@@ -16,12 +20,18 @@ page{
   font-size: large;
 }
 .title{
-  text-align: center;
-  font-size: 25px;
-  font-weight: 1000;
-  color: 	#33bdf3;
-  margin: 5px;
-}
+       font-size: 25px;
+       color: 	#37afdf;
+       font-weight: bold;  
+       text-shadow: 0 0 10rpx rgba(183, 205, 218, 0.726);
+       margin-top: 20px;
+       margin-bottom: 10px;
+       /* 字体居中 */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-family:cursive;
+     }
 
 .annotations{
   text-align: center;
@@ -46,3 +56,52 @@ page{
 text{
   margin: 5px;
 }
+
+swiper {
+       width: 100%;
+       height: calc(100vw * 327 /  491);
+     }
+     image {
+       width: 100%;
+     }
+
+     .title2{
+       font-size: 16px;
+       font-weight: bold; 
+       margin: 6px; 
+       align-items: center;
+     }
+     
+     .content{
+       color: rgb(66, 60, 64);
+       font-family:cursive;
+     }
+     .pic{
+       left: 50%;
+       height: 420px;
+       margin-left: -45%;
+       width: 90%;
+       display: block;
+       justify-content: left;
+       position: relative;
+       box-shadow: 16rpx 8rpx 24rpx rgba(212,48,48, 0.1);
+       margin-top: 15px;
+       margin-bottom: 45px;
+       border-radius: 15px;
+       background-color:rgba(46, 134, 222,0.6) ;
+       
+     }
+     .pic1{
+            padding: 30px;
+            margin-top: 20px;
+            margin-left: 5%;
+     }
+     .pic2{
+       margin-top: 20px;
+       margin-left: 35%;
+}
+.wenzi{
+       width: 92%;
+       margin: 0 auto;
+}
+     

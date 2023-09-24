@@ -10,12 +10,10 @@ let type=""
 let details=""
 let time=""
 let totalLen=0
-let open ='18ed0968619cde9306e4bb6566c4890c'
-let msgID ='9e7190f1619cdf41078dc3ba36be33e4'
-
+let open ='9ffab92d64f4483f00da68fc08756ab2'
 Page({
   data: {
-    ifOpen:false,
+    ifchuchen:false,
     msg:'',
     check:false,
     agImage:"../../icon/error.png",
@@ -24,36 +22,27 @@ Page({
   onLoad:function(){
     MDB.doc(open).get()
     .then(res =>{
+      console.log(res.data.ifOpen)
       this.setData({
-        ifOpen:res.data.ifOpen
+        ifchuchen:res.data.ifOpen
       })
+      console.log(this.data.ifchuchen)
     })
     .catch(res =>{
-      //console.log(res)
-    })
-    MDB.doc(msgID).get()
-    .then(res =>{
-      this.setData({
-        msg:res.data.msg
-      })
+      console.log(res)
     })
   },
   renew(){
     MDB.doc(open).get()
       .then(res => {
         this.setData({
-          ifOpen: res.data.ifOpen
+          ifchuchen:res.data.ifOpen
         })
       })
       .catch(res => {
-        //console.log(res)
       })
   },
-  // clickTest(){
-  //   console.log("点到我了！")
-  // },
   addName(e){
-    //console.log(e.detail.value);
     name=e.detail.value
   },
   addCom(e){
@@ -79,9 +68,7 @@ Page({
   },
   getTime() {
     var d = new Date();
-    //console.log(d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate());
-    time = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate()+"-"+d.getHours()+":"+d.getMinutes();
-    //console.log(time)
+    time = d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate()+"-"+d.getHours()+":"+d.getMinutes()
   },
   agreementCheck() {
     this.setData({
@@ -89,10 +76,8 @@ Page({
       agImage: "../../icon/agreementCheck.png"
     })
   },
-
   addData(){
     let that=this
-
     if (name != '' && com != '' && phonenum != '' && place != '' && dor != '' && gender != '' && type != '' && details != ''){
       if(that.data.check){
         if (that.data.click){
@@ -106,7 +91,6 @@ Page({
                   that.setData({
                     totalLen: res.total
                   })
-                  //console.log(res.total, that.data.totalLen)
                   DB.add({
                     data: {
                       name: name,
@@ -122,7 +106,6 @@ Page({
                       num: that.data.totalLen,
                     },
                     success(res) {
-                      //console.log("添加成功",res)
                       setTimeout(function(){
                         wx.hideLoading(),
                           wx.showToast({
@@ -131,11 +114,6 @@ Page({
                             duration: 2000,
                             mask: true,
                             success(res) {
-                              // setTimeout(function(){
-                              // wx.redirectTo({
-                              //   url: '/pages/demo3/demo3'
-                              // })
-                              // },500)//延时
                               that.setData({
                                 click: false
                               })
@@ -143,11 +121,8 @@ Page({
 
                           })
                       },1000)
-                      
-                      
                   },
                   fail(res) {
-                    //console.log("添加失败",res)
                     wx.showToast({
                       title: '请检查网络',
                       icon: 'loading',

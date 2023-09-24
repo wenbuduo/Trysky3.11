@@ -1,0 +1,188 @@
+/* pages/rongmei/rongmei.wxss *//* page{
+  background-image:linear-gradient(180deg,#CCFFFF 0%,rgba(230, 204, 255, 0.521) 100%);
+  margin: 0px;
+  padding: 0px;
+  height: 200%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  
+}
+
+.widget__arrow{
+  margin: 2px;
+  font-weight: 100;
+  font-size: large;
+  width: 355px;
+}
+.title{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 1000;
+  color: 	#33bdf3;
+  margin: 5px;
+}
+
+.annotations{
+  text-align: center;
+  font-size: 10px;
+  color: 	#FF9933;
+  margin: 3px;
+  font-style: oblique;
+}
+
+.title2{
+  font-size: 17px;
+  font-weight: 600;
+  margin: 3px;
+  color: #080808;
+}
+
+.content{
+  margin: 2px;
+  font-weight: 200;
+}
+
+text{
+  margin: 5px;
+} */
+
+page{
+       background-image:linear-gradient(180deg,#CCFFFF 0%,rgba(230, 204, 255, 0.521) 100%);
+       margin: 0px;
+       padding: 0px;
+       height: 105%;
+       width: 100%;
+       background-repeat: no-repeat;
+       background-attachment:fixed;
+       font-family:cursive;
+       font-size: larger;
+       letter-spacing: 1px;
+       line-height: 25px;
+       
+     }
+     .xixi{
+       position: absolute;
+       left:33%;
+       top:35%;
+       color: #083ac5 ;
+       font-size: large;
+       font-weight: bold;
+     }
+     
+     .widget__arrow{
+         height: 100%;
+         width: 100%;
+     }
+     .title{
+       text-align: center;
+       font-size: 25px;
+       font-weight: 1000;
+       color: 	#33bdf3;
+       margin-top: 10px;
+       margin-bottom: 10px;
+     }
+     .icon{
+      height: 20px;
+      width: 20px;
+     }
+     .flower{
+       position:relative;
+       width: 30px;
+       height: 30px;
+       top: 0;
+       animation-name: float;
+       animation-duration: 15s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease-in-out;
+     }
+     @keyframes float{
+       from{
+         top: -25px;
+         left: 0;
+         transform:rotateX(30deg);
+       }
+       
+       35%{
+         left:100%;
+         transform:rotateX(90deg);
+       }
+       60%{
+         left: -25px;
+         transform:rotateX(45deg);
+       }
+       to{
+         top:100%;
+         left:100%;
+         transform:rotateX(180deg);
+       }
+     }
+     .flower1{
+       position:relative;
+       width: 30px;
+       height: 30px;
+       top: 0;
+       animation-name: float1;
+       animation-duration: 15s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease-in-out;
+     }
+     @keyframes float1{
+       from{
+         top: -25px;
+         left: 100%;
+         transform:rotateX(30deg);
+       }
+       
+       35%{
+        left: 0;
+         transform:rotateX(90deg);
+       }
+       60%{
+         left: 100%;
+         transform:rotateX(45deg);
+       }
+       to{
+         top:100%;
+         left: 0;
+         transform:rotateX(180deg);
+       }
+     }
+     .annotations{
+       text-align: center;
+       font-size: 10px;
+       color: 	#FF9933;
+       margin: 3px;
+       font-style: oblique;
+     }
+     
+     .title2{
+       font-size: 17px;
+       font-weight: 600;
+       margin: 3px;
+       color: #080808;
+     }
+     
+     .content{
+       margin: 2px;
+       font-weight: 200;
+     }
+     
+     text{
+       margin: 5px;
+     }
+     
+     .content-info-slide{
+       height:450rpx;
+       margin-bottom: 20px;
+       }
+       .content-info-slide image{
+          width: 100%; height: 100%;
+       }
+.swi{
+       margin-top: 30px;
+}
+.wenzi{
+       width: 92%;
+       margin: 0 auto;
+}
