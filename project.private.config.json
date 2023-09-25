@@ -3,5 +3,33 @@
        "projectname": "Trysky3.10",
        "setting": {
               "compileHotReLoad": true
+       },
+       "libVersion": "3.1.0",
+       "condition": {
+              "miniprogram": {
+                     "list": [
+                            {
+                                   "name": "主页",
+                                   "pathName": "pages/MainPage/MainPage",
+                                   "query": "",
+                                   "launchMode": "default",
+                                   "scene": null
+                            },
+                            {
+                                   "name": "",
+                                   "pathName": "pages/managersMain/managersMain",
+                                   "query": "",
+                                   "launchMode": "default",
+                                   "scene": null
+                            },
+                            {
+                                   "name": "",
+                                   "pathName": "pages/certification/certification",
+                                   "query": "",
+                                   "launchMode": "default",
+                                   "scene": null
+                            }
+                     ]
+              }
        }
 }

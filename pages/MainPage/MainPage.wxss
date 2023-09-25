@@ -1,223 +1,223 @@
-page{
-  background: linear-gradient(180deg,#CCFFFF,#6699CC);
+page {
+  background: linear-gradient(180deg, #CCFFFF, #6699CC);
   margin: 0px;
   padding: 0px;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-attachment:fixed;
+  background-attachment: fixed;
 }
 
 
-.body1{
+.body1 {
   margin: 0px;
   padding: 0px;
 }
-.tslogo{
+
+.tslogo {
   position: absolute;
   top: 68%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   font-family: 'NSimSun';
-  font-size: 28px;
+  font-size: 56rpx;
   color: rgba(39, 1, 255, 0.15)
 }
-.tw{
-  margin-left: -11%;
-  margin-right: -11%;
+
+.tw {
+  padding-top: 50rpx;
+  height: auto;
   display: flex;
-  justify-content:space-between;
-  flex-direction: row;
-  
+  justify-content: space-between;
+  margin-right: -11%;
+  margin-left: -11%;
 }
-.tw view{
-  
+
+.tw view {
   font-family: 'NSimSun';
-  font-size: 75px;
+  font-size: 150rpx;
   font-weight: 800;
-  color:#FFF0F5;
+  color: #FFF0F5;
   margin-top: 80%;
 }
 
-.list1{
+.list1 {
   position: relative;
   display: flex;
-justify-content:space-between;
+  justify-content: space-between;
   flex-direction: row;
 }
 
-.list1 view navigator{
+.list1 view navigator {
   position: relative;
-  margin-top: 20px;
-  margin-left: 60px;
-  margin-right: 60px;
-
-  padding: 10px;
-  border-radius: 5px;
-
-
-  border: 1px solid rgba(255, 255, 255,0.4);
-  border-right: 1px solid rgba(255, 255, 255,0.2);
-  border-bottom: 1px solid rgba(255, 255, 255,0.2);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-
+  margin-top: 40rpx;
+  margin-left: 120rpx;
+  margin-right: 120rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid rgba(255, 255, 255, 0.4);
+  border-right: 2rpx solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2rpx solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10rpx 40rpx rgba(0, 0, 0, 0.1);
   transition: 0.9s;
   overflow: hidden;
 }
 
-.test1{
+.test1 {
   color: white;
   font-weight: 100;
-  font-size: 10px;
+  font-size: 20rpx;
   font-family: 'KaiTi';
   text-align: center;
 }
 
-.icon{
-  height: 30px;
-  width: 30px;
+.icon {
+  height: 60rpx;
+  width: 60rpx;
 }
 
-.buling{
+.buling {
   transform: translateY(-10px);
   transition: 0.3s;
 }
 
-.list1 view navigator::before{
+.list1 view navigator::before {
   content: '';
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
-  width: 20px;
+  width: 40rpx;
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
   transform: skewX(45deg)translateX(85px);
   transition: 0.9s;
 }
 
-.list1 view navigator:hover::before{
+.list1 view navigator:hover::before {
   transform: skewX(45deg) translateX(-60px);
 }
 
-.Photobox{
+.Photobox {
   position: absolute;
-  color:rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: 800;
   width: 100%;
 }
-.photo1{
+
+.photo1 {
   position: absolute;
   right: 0px;
-  border-radius: 5px;
-  background-color: rgba(255,0,0,0.1);
-  border: 1px solid rgba(255, 255, 255,0.4);
-  border-right: 1px solid rgba(255, 255, 255,0.2);
-  border-bottom: 1px solid rgba(255, 255, 255,0.2);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-  margin-right: 10px;
-  margin-top: 20px; 
+  border-radius: 10rpx;
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 2rpx solid rgba(255, 255, 255, 0.4);
+  border-right: 2rpx solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2rpx solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10rpx 40rpx rgba(0, 0, 0, 0.15);
+  margin-right: 20rpx;
+  margin-top: 40rpx;
   z-index: 3;
 }
 
-.photo11{
-  width: 280px;
-  height: 173px;
+.photo11 {
+  width: 560rpx;
+  height: 346rpx;
   padding: 5px;
   backdrop-filter: blur(2px);
 }
 
-.photo12{
-  width: 280px;
-  height: 173px;
+.photo12 {
+  width: 560rpx;
+  height: 346rpx;
   padding: 5px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
   animation: move1 0.8s;
   animation-fill-mode: forwards;
-  
+
 }
 
-@keyframes move1{
-  100%{
+@keyframes move1 {
+  100% {
     transform: translateX(-10%)translateY(25px);
   }
 }
 
 
-.photo2{
+.photo2 {
   position: absolute;
-  left: 0px;
-  border-radius: 3px;
+  left: 40rpx;
+  top: 80rpx;
+  border-radius: 6rpx;
   background-color: rgba(9, 255, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255,0.4);
-  border-right: 1px solid rgba(255, 255, 255,0.2);
-  border-bottom: 1px solid rgba(255, 255, 255,0.2);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-  margin-left: 5px;
-  margin-top: 150px; 
+  border: 2rpx solid rgba(255, 255, 255, 0.4);
+  border-right: 2rpx solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2rpx solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10rpx 40rpx rgba(0, 0, 0, 0.15);
+  margin-left: 10rpx;
+  margin-top: 300rpx;
   z-index: 2;
 }
 
-.photo21{
-  width: 180px;
-  height: 111px;
-  padding: 3px;
+.photo21 {
+  width: 190rpx;
+  height: 420rpx;
+  padding: 6rpx;
   backdrop-filter: blur(2px);
 }
 
-.photo22{
-  width: 180px;
-  height: 111px;
-  padding: 3px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+.photo22 {
+  width: 190rpx;
+  height: 420rpx;
+  padding: 6rpx;
+  box-shadow: 10rpx 10rpx 40rpx rgba(0, 0, 0, 0.3);
   animation: move2 0.8s;
   animation-fill-mode: forwards;
 }
 
-@keyframes move2{
-  100%{
+@keyframes move2 {
+  100% {
     transform: translateX(50%)translateY(60px);
   }
 }
 
-.photo3{
+.photo3 {
   position: absolute;
-  left: 220px;
-  border-radius: 3px;
+  left: 440rpx;
+  border-radius: 6rpx;
   background-color: rgba(255, 238, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255,0.4);
-  border-right: 1px solid rgba(255, 255, 255,0.2);
-  border-bottom: 1px solid rgba(255, 255, 255,0.2);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-  margin-left: 5px;
-  margin-top: 265px; 
+  border: 2rpx solid rgba(255, 255, 255, 0.4);
+  border-right: 2rpx solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2rpx solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10rpx 40rpx rgba(0, 0, 0, 0.15);
+  margin-left: 10rpx;
+  margin-top: 530rpx;
   z-index: 1;
 }
 
-.photo31{
-  width: 100px;
-  height: 61.8px;
-  padding: 2px;
+.photo31 {
+  width: 200rpx;
+  height: 124rpx;
+  padding: 4rpx;
   backdrop-filter: blur(2px);
 }
 
-.photo32{
-  width: 100px;
-  height: 61.8px;
-  padding: 2px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+.photo32 {
+  width: 200rpx;
+  height: 124rpx;
+  padding: 4rpx;
+  box-shadow: 10rpx 10rpx 40rpx rgba(0, 0, 0, 0.3);
   animation: move3 0.8s;
   animation-fill-mode: forwards;
 }
 
-@keyframes move3{
-  100%{
+@keyframes move3 {
+  100% {
     transform: translateX(-30%)translateY(30px);
   }
 }
 
-.bottom{
-  font-size: 10px;
-  margin: 20px;
+.bottom {
+  font-size: 20rpx;
+  margin: 40rpx;
   text-align: center;
   color: rgba(0, 0, 0, 0.603);
 }

@@ -1,66 +1,65 @@
 {
-  "pages": [
-       "pages/chuchen/chuchen",
-    "pages/MainPage/MainPage",
-      
-    "pages/managers/managers",
-    "pages/myorder/myorder",
-    "pages/managersMain/managersMain",
-    "pages/certification/certification",
-    "pages/submit/submit",
-    "pages/agreement/agreement",
-    "pages/introduce/introduce",
-    "pages/activities/activities",
-    "pages/logs/logs",
-    "pages/xingzheng/xingzheng",
-    "pages/shangwu/shangwu",
-    "pages/jishu/jishu",
-    "pages/yunwei/yunwei",
-    "pages/zixun/zixun",
-    "pages/chuanmei/chuanmei",
-    "pages/agreement2/agreement2"
-  ],
-  "tabBar": {
-    "color": "#3B5D67",
-    "selectedColor": "#3B5D67",
-    "backgroundColor": "#FFFFFF",
-    "borderStyle": "black",
-    "position": "bottom",
-    "list": [
-      {
-        "pagePath": "pages/submit/submit",
-        "text": "申请",
-        "iconPath": "/icon/apply.png",
-        "selectedIconPath": "/icon/summer.png"
-      },
-      {
-        "pagePath": "pages/MainPage/MainPage",
-        "text": "主页",
-        "iconPath": "/icon/mainPage.png",
-        "selectedIconPath": "/icon/summer.png"
-      },
-      {
-       "pagePath": "pages/chuchen/chuchen",
-       "text": "除尘报名",
-       "iconPath": "/icon/chuchen.png",
-       "selectedIconPath": "/icon/summer.png"
-     },
-      {
-        "pagePath": "pages/managersMain/managersMain",
-        "text": "用户",
-        "iconPath": "/icon/user.png",
-        "selectedIconPath": "/icon/summer.png"
-      }
-    ]
-  },
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#CCFFFF",
-    "navigationBarTitleText": "Trysky",
-    "navigationBarTextStyle": "black"
-  },
-  "sitemapLocation": "sitemap.json",
-  "usingComponents": {
-       "van-notice-bar": "vant-weapp/notice-bar/index"
-     }
+	"pages": [
+		"pages/chuchen/chuchen",
+		"pages/MainPage/MainPage",
+		"pages/managers/managers",
+		"pages/myorder/myorder",
+		"pages/managersMain/managersMain",
+		"pages/certification/certification",
+		"pages/submit/submit",
+		"pages/agreement/agreement",
+		"pages/introduce/introduce",
+		"pages/activities/activities",
+		"pages/logs/logs",
+		"pages/xingzheng/xingzheng",
+		"pages/shangwu/shangwu",
+		"pages/jishu/jishu",
+		"pages/yunwei/yunwei",
+		"pages/zixun/zixun",
+		"pages/chuanmei/chuanmei",
+		"pages/agreement2/agreement2"
+	],
+	"tabBar": {
+		"color": "#3B5D67",
+		"selectedColor": "#3B5D67",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"position": "bottom",
+		"list": [
+			{
+				"pagePath": "pages/submit/submit",
+				"text": "申请",
+				"iconPath": "/icon/apply.png",
+				"selectedIconPath": "/icon/summer.png"
+			},
+			{
+				"pagePath": "pages/MainPage/MainPage",
+				"text": "主页",
+				"iconPath": "/icon/mainPage.png",
+				"selectedIconPath": "/icon/summer.png"
+			},
+			{
+				"pagePath": "pages/chuchen/chuchen",
+				"text": "除尘报名",
+				"iconPath": "/icon/chuchen.png",
+				"selectedIconPath": "/icon/summer.png"
+			},
+			{
+				"pagePath": "pages/managersMain/managersMain",
+				"text": "用户",
+				"iconPath": "/icon/user.png",
+				"selectedIconPath": "/icon/summer.png"
+			}
+		]
+	},
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#CCFFFF",
+		"navigationBarTitleText": "Trysky",
+		"navigationBarTextStyle": "black"
+	},
+	"sitemapLocation": "sitemap.json",
+	"usingComponents": {
+		"van-notice-bar": "vant-weapp/notice-bar/index"
+	}
 }

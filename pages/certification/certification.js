@@ -1,7 +1,7 @@
 let name=""
 let wxNum=""
 let check=true
-let id ="28ee4e3e609d1ba3185213925ba8ff5a"
+let id ="43e67d8d64f40e1d00d57543317dc470"
 Page({
   data: {
     ifManagerTime:false
