@@ -1,42 +1,42 @@
 let choose1 = false;
 let choose2 = false;
 let choose3 = false;
-let photoid = "28ee4e3e609d5318185d75f86a8994b7";
+let photoid = "43e67d8d64f3ff3300d3d6ac6d4a162d";
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    touch1:false,
-    touch2:false,
-    touch3:false,
-    photo1:"",
+    touch1: false,
+    touch2: false,
+    touch3: false,
+    photo1: "",
     photo2: "",
     photo3: "",
   },
-  getPhoto(){
+  getPhoto() {
     wx.cloud.database().collection("ChangeData")
-    .doc(photoid)
-    .get()
-    .then(res=>{
-      this.setData({
-        photo1: res.data.photo1,
-        photo2: res.data.photo2,
-        photo3: res.data.photo3
+      .doc(photoid)
+      .get()
+      .then(res => {
+        this.setData({
+          photo1: res.data.photo1,
+          photo2: res.data.photo2,
+          photo3: res.data.photo3
+        })
       })
-    })
-    .catch(res=>{
-      console.log(res)
-    })
+      .catch(res => {
+        console.log(res)
+      })
   },
-  photoTouch1(){
-    if(choose1){
+  photoTouch1() {
+    if (choose1) {
       this.setData({
-        touch1:false
+        touch1: false
       })
-      choose1=false;
-    }else{
+      choose1 = false;
+    } else {
       this.setData({
         touch1: true
       })
@@ -69,19 +69,19 @@ Page({
       choose3 = true;
     }
   },
-  inn(){
+  inn() {
     wx.navigateTo({
       url: '../../pages/certification/certification',
-      success: function(res) {},
-      fail: function(res) {
+      success: function (res) {},
+      fail: function (res) {
         console.log("失败")
       },
-      complete: function(res) {},
+      complete: function (res) {},
     })
   },
-  bottom(){
+  bottom() {
     wx.showToast({
-      icon:'none',
+      icon: 'none',
       title: '完善中',
     })
   },
