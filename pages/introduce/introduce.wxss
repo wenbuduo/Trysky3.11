@@ -64,7 +64,7 @@ justify-content:center;
 
 
 .icon{
-  height: 30px;                                              /**小图标的大小设定**/
+  height:30px;                                              /**小图标的大小设定**/
   width: 30px;                             
 }
 

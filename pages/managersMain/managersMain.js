@@ -4,6 +4,7 @@ let changeID = "e8d27cb364f44fab00dc8fda49127843"
 const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0'
 Page({
       data: {
+        AvatarUrl:"",
         managerLogin: true,
         userInfo: [],
         openid: "",
@@ -61,7 +62,7 @@ Page({
                     .then(res => {
                       //console.log(res.data[0])
                       this.setData({
-                        ifDirector: res.data.ifDirector
+                        ifDirector: res.data[0].ifDirector
                       })
                     })
                     .catch(res => {
@@ -77,7 +78,7 @@ Page({
             repireman: e
           }).count()
           .then(res => {
-            console.log(res.total)
+            console.log("res.total:",res.total)
             this.setData({
               managerNum: res.total
             })
@@ -95,7 +96,6 @@ Page({
             }
           })
           .then(res => {
-            //console.log("成功",res)
             wx.showToast({
               icon: 'none',
               title: '开启成功',
@@ -163,12 +163,11 @@ Page({
           desc: '完善信息',
         })
           .then(res => {
-                // console.log(res.userInfo)
+                console.log("res.user.Info",res.userInfo)
                 this.setData({
                   userInfo: res.userInfo,
                   managerLogin: false,
                 })
-
                 wx.setStorageSync('userinfor', res.userInfo)
                 wx.setStorageSync('managerLogin', false)
               })
@@ -333,34 +332,7 @@ Page({
           });
         })
       }
-      let list = [];
-      // new Promise((resolve, reject) => {
-      //   getTotal(e.target.dataset.item._id).then(
-      //     res => {
-      //       let count = res; //获取待查询的数据总数
-      //       for (let i = 0; i < count; i += 20) {
-      //         getResultSkip(e.target.dataset.item._id, i).then(
-      //           res => {
-      //             list = list.concat(res);
-      //             if (list.length == count) { //当查询结果列表的长度等于count，即结束循环
-      //               if (list.length != 0) {
-      //                 this.setData({
-      //                   address: list
-      //                 })
-      //               } else {
-      //                 this.setData({
-      //                   address: []
-      //                 })
+     
 
-      //               }
-      //               resolve(list)
-      //             }
-      //           }
-      //         ).catch(err => {
-      //           console.error(err),
-      //             reject('查询失败')
-      //         })
-      //       }
-      //     }
-      //   )
-      // })
+
+ 

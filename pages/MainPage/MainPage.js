@@ -29,8 +29,9 @@ Page({
     })
   },
   photoTouch1(){
+    let that = this
     if(this.data.touch1){
-      console.log(touch1);
+     // console.log(touch1);
       this.setData({
         touch1:false
       })
@@ -49,7 +50,7 @@ Page({
       this.setData({
         touch2: true
       })
-      choose2 = true;
+      touch2 = true;
     }
   },
   photoTouch3() {
